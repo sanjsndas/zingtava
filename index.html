@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zingtava – Sizzle. Slurp. Snack. Recipes</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f8f8; /* Light grey background */
+            color: #212121; /* Soy Black for text */
+        }
+        .text-primary { color: #F44336; } /* Chili Red */
+        .bg-primary { background-color: #F44336; }
+        .text-accent-green { color: #8BC34A; } /* Wasabi Green */
+        .bg-accent-green { background-color: #8BC34A; }
+        .text-accent-gold { color: #FBC02D; } /* Ginger Gold */
+        .bg-accent-gold { background-color: #FBC02D; }
+        .text-accent-black { color: #212121; } /* Soy Black */
+        .bg-accent-black { background-color: #212121; }
+
+        /* Custom styles for rounded corners and shadows */
+        .card {
+            border-radius: 1.5rem; /* More rounded corners */
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05); /* Soft shadow */
+        }
+        .btn {
+            border-radius: 9999px; /* Pill shape */
+            transition: all 0.3s ease;
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+        .container {
+            max-width: 1200px;
+        }
+        /* Specific styling for navigation links */
+        nav a {
+            position: relative;
+            padding-bottom: 0.25rem;
+        }
+        nav a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #F44336; /* Chili Red underline */
+            transition: width 0.3s ease-in-out;
+        }
+        nav a:hover::after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <!-- Header Section -->
+    <header class="bg-white shadow-sm py-4">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <!-- Logo Concept: Wok with noodles flying + chopsticks -->
+                <svg class="w-10 h-10 text-primary mr-2" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
+                    <path d="M12 6.5c-2.49 0-4.5 2.01-4.5 4.5s2.01 4.5 4.5 4.5 4.5-2.01 4.5-4.5-2.01-4.5-4.5-4.5zm0 7c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                    <path d="M18.36 5.64c-1.17-1.17-3.07-1.17-4.24 0l-2.12 2.12c-.39.39-.39 1.02 0 1.41l2.83 2.83c.39.39 1.02.39 1.41 0l2.12-2.12c1.17-1.17 1.17-3.07 0-4.24zM5.64 18.36c1.17 1.17 3.07 1.17 4.24 0l2.12-2.12c.39-.39.39-1.02 0-1.41l-2.83-2.83c-.39-.39-1.02-.39-1.41 0l-2.12 2.12c-1.17 1.17-1.17 3.07 0 4.24z"/>
+                </svg>
+                <a href="index.html" class="text-3xl font-extrabold text-accent-black tracking-tight">Zingtava</a>
+            </div>
+            <nav>
+                <ul class="flex space-x-8 text-lg font-semibold">
+                    <li><a href="index.html" class="text-accent-black hover:text-primary">Home</a></li>
+                    <li><a href="blog.html" class="text-accent-black hover:text-primary">Blog</a></li>
+                    <li><a href="privacy.html" class="text-accent-black hover:text-primary">Privacy</a></li>
+                    <li><a href="terms.html" class="text-accent-black hover:text-primary">Terms</a></li>
+                    <li><a href="cookies.html" class="text-accent-black hover:text-primary">Cookies</a></li>
+                    <li><a href="contact.html" class="text-accent-black hover:text-primary">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- About Zingtava Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-5xl font-extrabold text-center text-accent-black mb-12">About Zingtava: Your Pan-Asian Flavor Station</h2>
+            <div class="max-w-4xl mx-auto text-lg leading-relaxed text-gray-700">
+                <p class="mb-6">
+                    Welcome to Zingtava, where the vibrant, aromatic world of Asian street food meets the comfort and convenience of your home kitchen. Our mission is simple: to empower every home cook, from novice to seasoned pro, to create incredibly flavorful, authentic, and exciting Asian dishes with ease. We believe that bold flavors shouldn't require complex techniques or obscure ingredients. Instead, they should be accessible, quick, and immensely satisfying. Zingtava is more than just a recipe website; it's a culinary journey designed to ignite your passion for Asian cuisine, one sizzle, slurp, and snack at a time.
+                </p>
+                <p class="mb-6">
+                    Our brand concept is deeply rooted in the dynamic energy of Asian street-side cooking. Imagine the rhythmic clang of a wok, the intoxicating aroma of garlic and ginger hitting hot oil, the vibrant colors of fresh vegetables, and the joyous chatter of people enjoying delicious, freshly prepared food. We've distilled this essence into Zingtava, blending that raw, authentic street-style sizzle with approachable, home-style instructions that ensure success every time. Whether you're craving the fiery kick of a chili paneer, the delicate balance of a sushi roll, or the comforting warmth of a ramen bowl, Zingtava is your trusted guide.
+                </p>
+               
+            </div>
+        </div>
+    </section>
+
+    <!-- Recipe Categories Section -->
+    <section id="recipes" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-5xl font-extrabold text-center text-accent-black mb-12">Our Flavorful Recipe Categories</h2>
+
+            <!-- Street Wok Stars -->
+            <div class="mb-16">
+                <h3 class="text-4xl font-bold text-primary mb-8 text-center">Street Wok Stars ✨</h3>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+                    <!-- Hakka Noodles -->
+                    <div class="bg-white p-8 card">
+                        <img src="p1.webp" alt="Hakka Noodles" class="w-full h-64 object-cover rounded-xl mb-6 shadow-md">
+                        <h4 class="text-3xl font-bold text-accent-black mb-4">Classic Hakka Noodles</h4>
+                        <p class="text-gray-700 mb-4">
+                            Dive into the quintessential street food experience with our Classic Hakka Noodles. This dish is a vibrant symphony of stir-fried noodles, crisp vegetables, and a savory sauce, delivering that authentic "wok hei" flavor right in your kitchen. It's incredibly versatile and perfect for a quick weeknight dinner or a flavorful lunch. The key to perfect Hakka noodles lies in high heat and quick tossing, ensuring every strand is coated and slightly charred, giving it that signature smoky aroma and irresistible texture. We'll guide you through achieving that perfect balance of crunch and chewiness.
+                        </p>
+                        <a href="recipe-hakka-noodles.html" class="btn bg-primary text-white px-6 py-3 text-lg font-bold hover:bg-red-700 block text-center">Read More &rarr;</a>
+                        <div class="flex items-center text-lg font-semibold text-gray-800 mt-4">
+                            Zing-O-Meter 🌶️: <span class="ml-2 text-accent-green">Balanced</span>
+                        </div>
+                    </div>
+
+                    <!-- Chili Paneer -->
+                    <div class="bg-white p-8 card">
+                        <img src="p2.webp" alt="Chili Paneer" class="w-full h-64 object-cover rounded-xl mb-6 shadow-md">
+                        <h4 class="text-3xl font-bold text-accent-black mb-4">Fiery Chili Paneer Dry</h4>
+                        <p class="text-gray-700 mb-4">
+                            Our Fiery Chili Paneer Dry is a classic Indo-Chinese appetizer that packs a serious punch. Cubes of soft paneer (Indian cottage cheese) are coated in a crispy batter, deep-fried, and then tossed in a vibrant, spicy, and tangy sauce with bell peppers and onions. This dish is incredibly addictive and perfect as a starter or a side with fried rice or noodles. The balance of textures – crispy paneer and crunchy vegetables – combined with the explosion of flavors makes it a perennial favorite.
+                        </p>
+                        <a href="recipe-chili-paneer.html" class="btn bg-primary text-white px-6 py-3 text-lg font-bold hover:bg-red-700 block text-center">Read More &rarr;</a>
+                        <div class="flex items-center text-lg font-semibold text-gray-800 mt-4">
+                            Zing-O-Meter 🌶️: <span class="ml-2 text-primary">Firebomb</span>
+                        </div>
+                    </div>
+
+                    <!-- Fried Rice (Veg) -->
+                    <div class="bg-white p-8 card">
+                        <img src="p3.webp" alt="Vegetable Fried Rice" class="w-full h-64 object-cover rounded-xl mb-6 shadow-md">
+                        <h4 class="text-3xl font-bold text-accent-black mb-4">Wholesome Veg Fried Rice</h4>
+                        <p class="text-gray-700 mb-4">
+                            Our Wholesome Veg Fried Rice is a quick, flavorful, and satisfying meal that's perfect for using up leftover rice and vegetables. It's a staple in Asian cuisine, known for its simplicity and deliciousness. The key to a great fried rice is using day-old, chilled rice, which prevents it from becoming mushy and allows the grains to separate beautifully. This recipe focuses on fresh vegetables and a balanced sauce, ensuring every spoonful is packed with umami.
+                        </p>
+                        <a href="recipe-veg-fried-rice.html" class="btn bg-primary text-white px-6 py-3 text-lg font-bold hover:bg-red-700 block text-center">Read More &rarr;</a>
+                        <div class="flex items-center text-lg font-semibold text-gray-800 mt-4">
+                            Zing-O-Meter 🌶️: <span class="ml-2 text-accent-green">Mild</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bento & Sushi DIY -->
+            <div class="mb-16">
+                <h3 class="text-4xl font-bold text-accent-green mb-8 text-center">Bento & Sushi DIY 🍣</h3>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+                    <!-- California Rolls -->
+                    <div class="bg-white p-8 card">
+                        <img src="p4.webp" alt="California Rolls" class="w-full h-64 object-cover rounded-xl mb-6 shadow-md">
+                        <h4 class="text-3xl font-bold text-accent-black mb-4">Perfect Homemade California Rolls</h4>
+                        <p class="text-gray-700 mb-4">
+                            Master the art of sushi making with our guide to Perfect Homemade California Rolls. This is a fantastic entry point into the world of sushi, featuring a delightful combination of creamy avocado, crisp cucumber, and succulent imitation crab meat, all wrapped in perfectly seasoned sushi rice and nori. It's an inside-out roll, meaning the rice is on the outside, making it visually appealing and a bit easier for beginners to handle. Learn the techniques for perfectly cooked sushi rice and tight rolling for a professional finish.
+                        </p>
+                        <a href="recipe-california-rolls.html" class="btn bg-primary text-white px-6 py-3 text-lg font-bold hover:bg-red-700 block text-center">Read More &rarr;</a>
+                        <div class="flex items-center text-lg font-semibold text-gray-800 mt-4">
+                            Zing-O-Meter 🌶️: <span class="ml-2 text-accent-green">Mild</span>
+                        </div>
+                    </div>
+
+                    <!-- Japanese Rice Balls (Onigiri) -->
+                    <div class="bg-white p-8 card">
+                        <img src="p5.webp" alt="Japanese Rice Balls Onigiri" class="w-full h-64 object-cover rounded-xl mb-6 shadow-md">
+                        <h4 class="text-3xl font-bold text-accent-black mb-4">Fun & Flavorful Japanese Onigiri</h4>
+                        <p class="text-gray-700 mb-4">
+                            Japanese Onigiri, or rice balls, are a beloved staple in Japan – perfect for lunchboxes, picnics, or a quick snack. They are incredibly customizable, allowing you to fill them with anything from savory salmon to pickled plum. This recipe provides the basic technique for shaping and seasoning your rice balls, along with popular filling ideas. The beauty of Onigiri lies in its simplicity and portability, making it a healthy and delicious alternative to sandwiches.
+                        </p>
+                        <a href="recipe-onigiri.html" class="btn bg-primary text-white px-6 py-3 text-lg font-bold hover:bg-red-700 block text-center">Read More &rarr;</a>
+                        <div class="flex items-center text-lg font-semibold text-gray-800 mt-4">
+                            Zing-O-Meter 🌶️: <span class="ml-2 text-accent-green">Mild</span>
+                        </div>
+                    </div>
+
+                    <!-- Soy-Glazed Tofu -->
+                    <div class="bg-white p-8 card">
+                        <img src="p6.webp" alt="Soy-Glazed Tofu" class="w-full h-64 object-cover rounded-xl mb-6 shadow-md">
+                        <h4 class="text-3xl font-bold text-accent-black mb-4">Savory Soy-Glazed Tofu</h4>
+                        <p class="text-gray-700 mb-4">
+                            Transform humble tofu into a culinary delight with our Savory Soy-Glazed Tofu recipe. This dish features crispy pan-fried tofu cubes coated in a rich, sweet, and savory glaze, making it an excellent vegetarian main course or a delicious addition to rice bowls and salads. The key to flavorful tofu is pressing out excess water and achieving a beautiful golden-brown crust before tossing it in the irresistible sauce.
+                        </p>
+                        <a href="recipe-soy-glazed-tofu.html" class="btn bg-primary text-white px-6 py-3 text-lg font-bold hover:bg-red-700 block text-center">Read More &rarr;</a>
+                        <div class="flex items-center text-lg font-semibold text-gray-800 mt-4">
+                            Zing-O-Meter 🌶️: <span class="ml-2 text-accent-green">Mild</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Snacky Zing -->
+            <div class="mb-16">
+                <h3 class="text-4xl font-bold text-primary mb-8 text-center">Snacky Zing 🥢</h3>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+                    <!-- Spring Rolls -->
+                    <div class="bg-white p-8 card">
+                        <img src="p7.webp" alt="Crispy Spring Rolls" class="w-full h-64 object-cover rounded-xl mb-6 shadow-md">
+                        <h4 class="text-3xl font-bold text-accent-black mb-4">Crispy Vegetable Spring Rolls</h4>
+                        <p class="text-gray-700 mb-4">
+                            Indulge in the satisfying crunch of our Crispy Vegetable Spring Rolls. These golden-fried delights are packed with a savory, seasoned vegetable filling, offering a perfect blend of textures and flavors. Ideal as an appetizer, party snack, or a light meal, homemade spring rolls are surprisingly easy to make and infinitely more delicious than store-bought versions. We'll guide you through the art of rolling for a perfectly sealed and crispy finish.
+                        </p>
+                        <a href="recipe-spring-rolls.html" class="btn bg-primary text-white px-6 py-3 text-lg font-bold hover:bg-red-700 block text-center">Read More &rarr;</a>
+                        <div class="flex items-center text-lg font-semibold text-gray-800 mt-4">
+                            Zing-O-Meter 🌶️: <span class="ml-2 text-accent-green">Balanced</span>
+                        </div>
+                    </div>
+
+                    <!-- Gyoza Dumplings -->
+                    <div class="bg-white p-8 card">
+                        <img src="p8.avif" alt="Gyoza Dumplings" class="w-full h-64 object-cover rounded-xl mb-6 shadow-md">
+                        <h4 class="text-3xl font-bold text-accent-black mb-4">Savory Pan-Fried Gyoza</h4>
+                        <p class="text-gray-700 mb-4">
+                            Experience the delightful texture of homemade Gyoza, Japanese pan-fried dumplings. These savory parcels feature a juicy pork and vegetable filling encased in a delicate wrapper, pan-fried to a golden crisp on the bottom and then steamed to perfection. The contrast between the crispy base and the tender, succulent filling makes Gyoza an irresistible appetizer or side dish. Our detailed instructions will help you master the art of pleating for a beautiful presentation.
+                        </p>
+                        <a href="recipe-gyoza.html" class="btn bg-primary text-white px-6 py-3 text-lg font-bold hover:bg-red-700 block text-center">Read More &rarr;</a>
+                        <div class="flex items-center text-lg font-semibold text-gray-800 mt-4">
+                            Zing-O-Meter 🌶️: <span class="ml-2 text-accent-green">Balanced</span>
+                        </div>
+                    </div>
+
+                    <!-- Honey-Chili Potato -->
+                    <div class="bg-white p-8 card">
+                        <img src="p9.webp" alt="Honey-Chili Potato" class="w-full h-64 object-cover rounded-xl mb-6 shadow-md">
+                        <h4 class="text-3xl font-bold text-accent-black mb-4">Sweet & Spicy Honey-Chili Potato</h4>
+                        <p class="text-gray-700 mb-4">
+                            Our Honey-Chili Potato is a delightful Indo-Chinese fusion snack that perfectly balances sweet, spicy, and tangy flavors. Crispy fried potato fingers are tossed in a vibrant sauce with bell peppers and onions, creating an irresistible texture and taste sensation. This dish is incredibly popular as an appetizer or a side dish, offering a unique twist on classic potato fries. The sticky, glossy sauce makes it utterly addictive.
+                        </p>
+                        <a href="recipe-honey-chili-potato.html" class="btn bg-primary text-white px-6 py-3 text-lg font-bold hover:bg-red-700 block text-center">Read More &rarr;</a>
+                        <div class="flex items-center text-lg font-semibold text-gray-800 mt-4">
+                            Zing-O-Meter 🌶️: <span class="ml-2 text-primary">Firebomb</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Soup Slurps -->
+            <div class="mb-16">
+                <h3 class="text-4xl font-bold text-accent-green mb-8 text-center">Soup Slurps 🍜</h3>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+                    <!-- Hot & Sour Soup -->
+                    <div class="bg-white p-8 card">
+                        <img src="p10.webp" alt="Hot & Sour Soup" class="w-full h-64 object-cover rounded-xl mb-6 shadow-md">
+                        <h4 class="text-3xl font-bold text-accent-black mb-4">Classic Hot & Sour Soup</h4>
+                        <p class="text-gray-700 mb-4">
+                            Warm up with a bowl of our Classic Hot & Sour Soup, a quintessential Indo-Chinese delight known for its perfect balance of spicy, tangy, and savory flavors. This hearty soup is packed with finely chopped vegetables, mushrooms, and a hint of ginger and garlic, thickened to a comforting consistency. It's the ultimate comfort food on a chilly day or a fantastic starter for any Asian meal.
+                        </p>
+                        <a href="recipe-hot-sour-soup.html" class="btn bg-primary text-white px-6 py-3 text-lg font-bold hover:bg-red-700 block text-center">Read More &rarr;</a>
+                        <div class="flex items-center text-lg font-semibold text-gray-800 mt-4">
+                            Zing-O-Meter 🌶️: <span class="ml-2 text-primary">Firebomb</span>
+                        </div>
+                    </div>
+
+                    <!-- Ramen Bowl with Toppings -->
+                    <div class="bg-white p-8 card">
+                        <img src="p1.webp" alt="Ramen Bowl with Toppings" class="w-full h-64 object-cover rounded-xl mb-6 shadow-md">
+                        <h4 class="text-3xl font-bold text-accent-black mb-4">Ultimate Homemade Ramen Bowl</h4>
+                        <p class="text-gray-700 mb-4">
+                            Craft your own Ultimate Homemade Ramen Bowl, a deeply satisfying and customizable meal that brings the authentic flavors of Japan to your table. While traditional ramen broths can take hours, our recipe focuses on building a rich, flavorful base quickly, combined with perfectly cooked noodles and an array of delightful toppings. This is comfort food at its finest, offering warmth, texture, and an explosion of umami in every slurp.
+                        </p>
+                        <a href="recipe-ramen-bowl.html" class="btn bg-primary text-white px-6 py-3 text-lg font-bold hover:bg-red-700 block text-center">Read More &rarr;</a>
+                        <div class="flex items-center text-lg font-semibold text-gray-800 mt-4">
+                            Zing-O-Meter 🌶️: <span class="ml-2 text-accent-green">Balanced</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fusion Bites -->
+            <div class="mb-16">
+                <h3 class="text-4xl font-bold text-primary mb-8 text-center">Fusion Bites 💥</h3>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+                    <!-- Indo-Japanese Maggi Sushi -->
+                    <div class="bg-white p-8 card">
+                        <img src="https://placehold.co/600x400/FBC02D/212121?text=Maggi+Sushi" alt="Indo-Japanese Maggi Sushi" class="w-full h-64 object-cover rounded-xl mb-6 shadow-md">
+                        <h4 class="text-3xl font-bold text-accent-black mb-4">Indo-Japanese Maggi Sushi</h4>
+                        <p class="text-gray-700 mb-4">
+                            Prepare for a culinary adventure with our Indo-Japanese Maggi Sushi, a playful and utterly delicious fusion that combines India's beloved instant noodles with the art of Japanese sushi. This innovative snack takes the familiar savory flavor of Maggi and wraps it into a sushi roll, offering a surprising yet harmonious blend of textures and tastes. It's a testament to how global flavors can playfully intertwine, creating something truly unique and exciting.
+                        </p>
+                        <a href="recipe-maggi-sushi.html" class="btn bg-primary text-white px-6 py-3 text-lg font-bold hover:bg-red-700 block text-center">Read More &rarr;</a>
+                        <div class="flex items-center text-lg font-semibold text-gray-800 mt-4">
+                            Zing-O-Meter 🌶️: <span class="ml-2 text-accent-green">Balanced</span>
+                        </div>
+                    </div>
+
+                    <!-- Crispy Momos with Fire Sauce -->
+                    <div class="bg-white p-8 card">
+                        <img src="https://placehold.co/600x400/F44336/FFFFFF?text=Crispy+Momos" alt="Crispy Momos with Fire Sauce" class="w-full h-64 object-cover rounded-xl mb-6 shadow-md">
+                        <h4 class="text-3xl font-bold text-accent-black mb-4">Crispy Momos with Fire Sauce</h4>
+                        <p class="text-gray-700 mb-4">
+                            Elevate your momo experience with our Crispy Momos served alongside a fiery "Fire Sauce." These aren't your typical steamed dumplings; we pan-fry them to achieve a golden, crispy exterior while retaining their juicy, flavorful filling. The accompanying homemade Fire Sauce is a bold blend of chilies and aromatics, designed to awaken your taste buds and provide an exhilarating kick. This fusion take on a beloved classic is perfect for those who crave both crunch and intense flavor.
+                        </p>
+                        <a href="recipe-crispy-momos.html" class="btn bg-primary text-white px-6 py-3 text-lg font-bold hover:bg-red-700 block text-center">Read More &rarr;</a>
+                        <div class="flex items-center text-lg font-semibold text-gray-800 mt-4">
+                            Zing-O-Meter 🌶️: <span class="ml-2 text-primary">Firebomb</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-5xl font-extrabold text-center text-accent-black mb-12">Zingtava's Unique Features</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10 text-center">
+                <div class="p-6 bg-gray-50 rounded-xl card">
+                    <div class="text-6xl text-primary mb-4">🌶️</div>
+                    <h3 class="text-2xl font-bold text-accent-black mb-2">Zing-O-Meter</h3>
+                    <p class="text-gray-700">
+                        Our exclusive Zing-O-Meter allows you to instantly gauge the spice level of every recipe. Whether you prefer a gentle warmth or an explosive kick, our clear ratings – Mild, Balanced, and Firebomb – ensure you always know what to expect. This feature is designed to help you tailor your cooking to your personal preference, making every meal a perfectly spiced delight. No more guessing games or accidental infernos!
+                    </p>
+                </div>
+                <div class="p-6 bg-gray-50 rounded-xl card">
+                    <div class="text-6xl text-accent-gold mb-4">⏱️</div>
+                    <h3 class="text-2xl font-bold text-accent-black mb-2">Wok in 15</h3>
+                    <p class="text-gray-700">
+                        Life moves fast, and so should your dinner. "Wok in 15" is a dedicated category of recipes specifically curated for busy individuals. These dishes are designed to go from pantry to plate in under 15 minutes, without compromising on flavor or authenticity. Perfect for quick lunches, spontaneous dinners, or when you need a delicious meal in a flash. Speed and taste, perfectly combined!
+                    </p>
+                </div>
+                <div class="p-6 bg-gray-50 rounded-xl card">
+                    <div class="text-6xl text-accent-green mb-4">🥨</div>
+                    <h3 class="text-2xl font-bold text-accent-black mb-2">Snack Stack</h3>
+                    <p class="text-gray-700">
+                        Are you a snack enthusiast? Our "Snack Stack" feature lets you sort and discover Asian snacks by various criteria: crunch level (from soft and chewy to super crispy), prep time, and even dipping sauce pairings. Find your next favorite munchie, whether it's a quick bite for movie night or an elaborate appetizer for a gathering. Explore the world of Asian snacks like never before!
+                    </p>
+                </div>
+                <div class="p-6 bg-gray-50 rounded-xl card">
+                    <div class="text-6xl text-accent-black mb-4">🔄</div>
+                    <h3 class="text-2xl font-bold text-accent-black mb-2">Ingredient Swapper</h3>
+                    <p class="text-gray-700">
+                        Flexibility is key in the kitchen. Our innovative "Ingredient Swapper" provides smart suggestions for substitutions, allowing you to adapt recipes based on what you have on hand or dietary preferences. Want to swap tofu for chicken, or use maggi instead of soba noodles? Need a honey alternative for mirin? This feature empowers you to customize recipes effortlessly, making Zingtava truly your own culinary playground.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section (ZingSide Diaries) -->
+    <section id="blog" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-5xl font-extrabold text-center text-accent-black mb-12">ZingSide Diaries: Our Blog</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
+                <div class="bg-white p-6 card">
+                    <h3 class="text-2xl font-bold text-accent-black mb-3">How to Get the Perfect Wok Hei at Home</h3>
+                    <p class="text-gray-700 mb-4">
+                        Unlock the secret to authentic stir-fries! "Wok Hei," the breath of the wok, is that elusive smoky, charred flavor that elevates Asian dishes. This blog post dives deep into the techniques, equipment, and tips you need to achieve this professional-grade flavor right in your home kitchen, even without a commercial burner. From proper wok seasoning to high-heat cooking strategies, we cover it all to transform your stir-fries.
+                    </p>
+                    <a href="blog.html#wok-hei" class="text-primary font-semibold hover:underline">Read More &rarr;</a>
+                </div>
+                <div class="bg-white p-6 card">
+                    <h3 class="text-2xl font-bold text-accent-black mb-3">5 Gyoza Fillings You Haven’t Tried Yet</h3>
+                    <p class="text-gray-700 mb-4">
+                        Tired of the same old gyoza? This post will inspire you with five innovative and incredibly delicious gyoza filling ideas that go beyond the traditional pork and cabbage. Discover exciting combinations like spicy kimchi and tofu, creamy chicken and mushroom, or even a sweet dessert gyoza. Expand your dumpling repertoire and surprise your taste buds with these unique twists.
+                    </p>
+                    <a href="blog.html#gyoza-fillings" class="text-primary font-semibold hover:underline">Read More &rarr;</a>
+                </div>
+                <div class="bg-white p-6 card">
+                    <h3 class="text-2xl font-bold text-accent-black mb-3">Street vs. Sushi: Navigating Asian Cuisines at Home</h3>
+                    <p class="text-gray-700 mb-4">
+                        Asian cuisine is vast and varied. This article explores the fascinating differences and surprising similarities between the bold, rustic flavors of street food and the refined, artful elegance of sushi. Learn how to navigate these diverse culinary landscapes in your home kitchen, understanding the core principles and techniques that define each style.
+                    </p>
+                    <a href="blog.html#street-vs-sushi" class="text-primary font-semibold hover:underline">Read More &rarr;</a>
+                </div>
+                <div class="bg-white p-6 card">
+                    <h3 class="text-2xl font-bold text-accent-black mb-3">Chili Oil 101: How to Make, Store, and Use It on Everything</h3>
+                    <p class="text-gray-700 mb-4">
+                        A pantry essential for any Asian food lover! This comprehensive guide to chili oil covers everything you need to know: from making your own aromatic, crispy chili oil from scratch, to proper storage techniques to maximize freshness, and countless ways to use this versatile condiment on virtually everything. Elevate your dishes with a drizzle of homemade chili oil.
+                    </p>
+                    <a href="blog.html#chili-oil-101" class="text-primary font-semibold hover:underline">Read More &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social / Mobile Ideas Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-5xl font-extrabold text-center text-accent-black mb-12">Connect with Zingtava!</h2>
+            <div class="grid md:grid-cols-2 gap-10 text-center max-w-4xl mx-auto">
+                <div class="p-6 bg-gray-50 rounded-xl card">
+                    <h3 class="text-2xl font-bold text-accent-black mb-3">60-sec Wok Toss Reels</h3>
+                    <p class="text-gray-700">
+                        Get inspired by our lightning-fast "Wok Toss Reels"! These short, dynamic videos on Instagram and TikTok showcase the sizzle and speed of our quick wok recipes. Watch complex dishes come together in just 60 seconds, perfectly demonstrating techniques and inspiring your next meal. Follow us for daily bursts of culinary energy!
+                    </p>
+                </div>
+                <div class="p-6 bg-gray-50 rounded-xl card">
+                    <h3 class="text-2xl font-bold text-accent-black mb-3">"What’s That Sauce?" Instagram Series</h3>
+                    <p class="text-gray-700">
+                        Demystify Asian sauces with our interactive "What’s That Sauce?" Instagram series. Each episode highlights a key Asian sauce, explaining its flavor profile, common uses, and how to incorporate it into your cooking. Learn about soy sauce, oyster sauce, hoisin, sriracha, and more, becoming a sauce expert in no time!
+                    </p>
+                </div>
+                <div class="p-6 bg-gray-50 rounded-xl card">
+                    <h3 class="text-2xl font-bold text-accent-black mb-3">Mobile Cooking Timer with Built-in Steps</h3>
+                    <p class="text-gray-700">
+                        Our mobile-optimized recipes come with an integrated cooking timer that guides you through each step. No more juggling multiple apps! This feature ensures precise timing for perfect results, making your cooking experience seamless and stress-free, especially when you're busy in the kitchen.
+                    </p>
+                </div>
+                <div class="p-6 bg-gray-50 rounded-xl card">
+                    <h3 class="text-2xl font-bold text-accent-black mb-3">QR Codes with Every Recipe Card</h3>
+                    <p class="text-gray-700">
+                        Scan and learn! Every printable recipe card on Zingtava features a unique QR code. Scan it with your smartphone to instantly access a short video tutorial for that specific recipe, offering visual guidance and expert tips right when you need them most. It's like having a chef by your side!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Extras Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-5xl font-extrabold text-center text-accent-black mb-12">Zingtava Extras & Goodies</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10 text-center">
+                <div class="p-6 bg-white rounded-xl card">
+                    <h3 class="text-2xl font-bold text-accent-black mb-3">Printable Bento Box Planner</h3>
+                    <p class="text-gray-700">
+                        Organize your healthy and delicious lunches with our free downloadable and printable Bento Box Planner. This handy tool helps you plan balanced meals, portion sizes, and diverse flavors for your weekly bento creations, making meal prep fun and efficient.
+                    </p>
+                </div>
+                <div class="p-6 bg-white rounded-xl card">
+                    <h3 class="text-2xl font-bold text-accent-black mb-3">Free Downloadable ZingSauce Recipes</h3>
+                    <p class="text-gray-700">
+                        Unlock the secrets to Zingtava's signature sauces! Download our exclusive collection of "ZingSauce" recipes, featuring versatile and flavorful dipping sauces, marinades, and stir-fry bases that will elevate any dish. From tangy to spicy, these sauces are game-changers.
+                    </p>
+                </div>
+                <div class="p-6 bg-white rounded-xl card">
+                    <h3 class="text-2xl font-bold text-accent-black mb-3">Monthly “Mystery Wok” Challenge</h3>
+                    <p class="text-gray-700">
+                        Join our exciting Monthly "Mystery Wok" Challenge! Each month, we reveal a set of mystery ingredients, and you get to create your most innovative Asian dish. Share your creations for a chance to win amazing prizes and bragging rights in our vibrant community.
+                    </p>
+                </div>
+                <div class="p-6 bg-white rounded-xl card">
+                    <h3 class="text-2xl font-bold text-accent-black mb-3">Recipe Card Template with Emoji Tips</h3>
+                    <p class="text-gray-700">
+                        Our beginner-friendly Recipe Card Template comes with fun emoji tips and visual cues to guide you through each step. Perfect for new cooks, this template simplifies complex instructions, making cooking Asian dishes approachable and enjoyable for everyone.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Target Audience Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-5xl font-extrabold text-center text-accent-black mb-12">Who Is Zingtava For? Our Target Audience</h2>
+            <div class="max-w-4xl mx-auto text-lg leading-relaxed text-gray-700">
+                <p class="mb-6">
+                    Zingtava is meticulously crafted for a diverse and passionate community of food lovers. Our content resonates deeply with individuals who share a common appreciation for bold flavors, culinary exploration, and the joy of creating delicious meals at home. We've identified several key segments within our target audience, each with unique needs and desires that Zingtava is perfectly positioned to fulfill.
+                </p>
+                <p class="mb-6">
+                    Firstly, we cater to the **Foodies who love Asian snacks & street food**. These are individuals who are constantly seeking out new and exciting culinary experiences. They are adventurous eaters, eager to replicate the vibrant tastes of their favorite Asian street food stalls and snack bars in their own kitchens. They appreciate authenticity but also enjoy creative twists. For them, Zingtava offers a treasure trove of recipes that capture the true essence of street-side sizzle, from crispy spring rolls to savory momos, ensuring they can satisfy their cravings anytime.
+                </p>
+                <p class="mb-6">
+                    Secondly, Zingtava is an invaluable resource for **Busy people who want quick wok recipes**. In today's fast-paced world, time is a precious commodity. Our audience includes professionals, parents, and anyone with a demanding schedule who still desires wholesome, flavorful, and freshly cooked meals. They are looking for efficiency without compromising on taste. Our "Wok in 15" recipes and streamlined instructions are specifically designed to meet this need, providing delicious Asian meals that can be prepared in minutes, making healthy eating achievable even on the busiest days.
+                </p>
+                <p class="mb-6">
+                    Our third segment encompasses **Content creators, late-night snackers, and students**. Content creators are always on the lookout for visually appealing and engaging food ideas that are easy to demonstrate and share. Zingtava's vibrant aesthetic and unique recipes, especially those suited for short-form video, make it an ideal source of inspiration. Late-night snackers and students, often on a budget and looking for quick, satisfying, and exciting bites, will find our "Snack Stack" and easy-to-follow recipes perfect for their impromptu cravings and limited kitchen resources. They appreciate dishes that are both delicious and don't require extensive effort or specialized equipment.
+                </p>
+                <p class="mb-6">
+                    Finally, we appeal to **Fusion chefs who like bold, zingy flavors at home**. This group is not afraid to experiment and enjoys blending culinary traditions. They appreciate the depth of flavor found in Asian cuisine and are keen to incorporate its bold, spicy, and umami-rich elements into their home cooking, often with a creative twist. Zingtava provides the foundational recipes and inspiration for these culinary innovators to explore new flavor combinations, such as our Indo-Japanese Maggi Sushi or Chili Garlic Nachos, encouraging them to push the boundaries of traditional cooking.
+                </p>
+                <p class="mb-6">
+                    In essence, Zingtava speaks to anyone who is passionate about Asian food, values convenience, seeks culinary inspiration, and enjoys a modern, fun approach to cooking. We are building a community where flavor knows no bounds, and every meal is an opportunity for a delicious adventure.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Satisfaction Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-5xl font-extrabold text-accent-black mb-8">Your Satisfaction, Our Priority!</h2>
+            <div class="max-w-3xl mx-auto text-lg leading-relaxed text-gray-700">
+                <p class="mb-6">
+                    At Zingtava, your culinary journey and satisfaction are at the heart of everything we do. We are committed to providing you with high-quality, delicious, and easy-to-follow recipes that consistently deliver fantastic results. Our team works tirelessly to test and refine every dish, ensuring that when you follow our instructions, you're set up for success in your kitchen.
+                </p>
+                <p class="mb-6">
+                    We value your feedback immensely. If you have any questions, suggestions, or encounter any issues with our recipes or website, please do not hesitate to reach out to us. Your insights help us to continuously improve and tailor our content to your needs. We believe in fostering a vibrant and supportive community of home cooks, and your happiness is our ultimate reward. Join our Zingtava family and let's create amazing flavors together!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Disclaimer Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-5xl font-extrabold text-center text-accent-black mb-8">Disclaimer</h2>
+            <div class="max-w-4xl mx-auto text-sm leading-relaxed text-gray-600">
+                <p class="mb-4">
+                    The information provided on Zingtava.com (the "Website") is for general informational and culinary purposes only. All recipes, cooking instructions, tips, and dietary information are offered in good faith and for educational purposes. While Zingtava strives to provide accurate and up-to-date information, we make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability, or availability with respect to the Website or the information, products, services, or related graphics contained on the Website for any purpose. Any reliance you place on such information is therefore strictly at your own risk.
+                </p>
+                <p class="mb-4">
+                    <strong>Allergens and Dietary Restrictions:</strong> Recipes on this Website may contain common allergens such as nuts, dairy, gluten, soy, eggs, shellfish, and other ingredients that can cause allergic reactions. It is the sole responsibility of the user to identify and avoid ingredients that may cause allergic reactions or conflict with their dietary restrictions. Zingtava cannot be held responsible for any adverse reactions to food consumed as a result of following recipes or information on this Website. Always read food labels carefully and consult with a healthcare professional or registered dietitian if you have any concerns about allergies or specific dietary needs.
+                </p>
+                <p class="mb-4">
+                    <strong>Cooking Safety:</strong> Cooking involves inherent risks, including but not limited to cuts, burns, and other injuries. Users are advised to exercise caution and follow all standard kitchen safety practices while preparing any recipe from this Website. Ensure proper handling of knives, hot surfaces, and cooking equipment. Children should always be supervised by an adult when in the kitchen. Zingtava is not responsible for any accidents, injuries, or damages that may occur as a result of following the recipes or instructions provided.
+                </p>
+                <p class="mb-4">
+                    <strong>Recipe Outcomes:</strong> The results of recipes may vary depending on factors such as ingredient freshness, cooking equipment, individual cooking skills, and adherence to instructions. Zingtava does not guarantee specific outcomes or results for any recipe. Nutritional information, if provided, is an estimate only and should not be considered a substitute for professional nutritional advice.
+                </p>
+                <p class="mb-4">
+                    <strong>External Links:</strong> This Website may contain links to other websites that are not provided or maintained by or in any way affiliated with Zingtava. Please note that Zingtava does not guarantee the accuracy, relevance, timeliness, or completeness of any information on these external websites. The inclusion of any links does not necessarily imply a recommendation or endorse the views expressed within them.
+                </p>
+                <p class="mb-4">
+                    <strong>Intellectual Property:</strong> All content on this Website, including text, images, graphics, and recipes, is the intellectual property of Zingtava unless otherwise stated. Unauthorized reproduction or distribution of any content from this Website is strictly prohibited.
+                </p>
+                <p class="mb-4">
+                    By using this Website, you hereby agree to this disclaimer and its terms. If you do not agree with any part of this disclaimer, please do not use our Website. Zingtava reserves the right to modify this disclaimer at any time without prior notice. It is your responsibility to review this disclaimer periodically for changes.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-accent-black text-white py-10">
+        <div class="container mx-auto px-4 text-center">
+            <div class="mb-6">
+                <h3 class="text-2xl font-bold text-accent-gold mb-2">Zingtava Headquarters</h3>
+                <p class="text-gray-400">
+                    123 Flavor Street, Spice District,<br>
+                    Umami City, Global Region 78901<br>
+                    Phone: +1 (555) 123-4567<br>
+                    Email: info@zingtava.com
+                </p>
+            </div>
+            <nav class="mb-6">
+                <ul class="flex flex-wrap justify-center space-x-6 text-lg font-semibold">
+                    <li><a href="index.html" class="text-gray-300 hover:text-primary">Home</a></li>
+                    <li><a href="blog.html" class="text-gray-300 hover:text-primary">Blog</a></li>
+                    <li><a href="privacy.html" class="text-gray-300 hover:text-primary">Privacy</a></li>
+                    <li><a href="terms.html" class="text-gray-300 hover:text-primary">Terms</a></li>
+                    <li><a href="cookies.html" class="text-gray-300 hover:text-primary">Cookies</a></li>
+                    <li><a href="contact.html" class="text-gray-300 hover:text-primary">Contact</a></li>
+                </ul>
+            </nav>
+            <p class="text-gray-500 text-sm">&copy; 2025 Zingtava. All rights reserved. Sizzle. Slurp. Snack. is a registered trademark.</p>
+        </div>
+    </footer>
+</body>
+</html>

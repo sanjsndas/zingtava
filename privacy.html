@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zingtava Privacy Policy – Your Data, Our Commitment</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f8f8; /* Light grey background */
+            color: #212121; /* Soy Black for text */
+        }
+        .text-primary { color: #F44336; } /* Chili Red */
+        .bg-primary { background-color: #F44336; }
+        .text-accent-green { color: #8BC34A; } /* Wasabi Green */
+        .bg-accent-green { background-color: #8BC34A; }
+        .text-accent-gold { color: #FBC02D; } /* Ginger Gold */
+        .bg-accent-gold { background-color: #FBC02D; }
+        .text-accent-black { color: #212121; } /* Soy Black */
+        .bg-accent-black { background-color: #212121; }
+
+        /* Custom styles for rounded corners and shadows */
+        .card {
+            border-radius: 1.5rem; /* More rounded corners */
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05); /* Soft shadow */
+        }
+        .btn {
+            border-radius: 9999px; /* Pill shape */
+            transition: all 0.3s ease;
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+        .container {
+            max-width: 1200px;
+        }
+        /* Specific styling for navigation links */
+        nav a {
+            position: relative;
+            padding-bottom: 0.25rem;
+        }
+        nav a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #F44336; /* Chili Red underline */
+            transition: width 0.3s ease-in-out;
+        }
+        nav a:hover::after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <!-- Header Section -->
+    <header class="bg-white shadow-sm py-4">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <!-- Logo Concept: Wok with noodles flying + chopsticks -->
+                <svg class="w-10 h-10 text-primary mr-2" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
+                    <path d="M12 6.5c-2.49 0-4.5 2.01-4.5 4.5s2.01 4.5 4.5 4.5 4.5-2.01 4.5-4.5-2.01-4.5-4.5-4.5zm0 7c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                    <path d="M18.36 5.64c-1.17-1.17-3.07-1.17-4.24 0l-2.12 2.12c-.39.39-.39 1.02 0 1.41l2.83 2.83c.39.39 1.02.39 1.41 0l2.12-2.12c1.17-1.17 1.17-3.07 0-4.24zM5.64 18.36c1.17 1.17 3.07 1.17 4.24 0l2.12-2.12c.39-.39.39-1.02 0-1.41l-2.83-2.83c-.39-.39-1.02-.39-1.41 0l-2.12 2.12c-1.17 1.17-1.17 3.07 0 4.24z"/>
+                </svg>
+                <a href="index.html" class="text-3xl font-extrabold text-accent-black tracking-tight">Zingtava</a>
+            </div>
+            <nav>
+                <ul class="flex space-x-8 text-lg font-semibold">
+                    <li><a href="index.html" class="text-accent-black hover:text-primary">Home</a></li>
+                    <li><a href="blog.html" class="text-accent-black hover:text-primary">Blog</a></li>
+                    <li><a href="privacy.html" class="text-accent-black hover:text-primary">Privacy</a></li>
+                    <li><a href="terms.html" class="text-accent-black hover:text-primary">Terms</a></li>
+                    <li><a href="cookies.html" class="text-accent-black hover:text-primary">Cookies</a></li>
+                    <li><a href="contact.html" class="text-accent-black hover:text-primary">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Privacy Policy Hero Section -->
+    <section class="py-20 bg-accent-green text-white text-center">
+        <div class="container mx-auto px-4">
+            <h1 class="text-6xl font-extrabold mb-4">Zingtava Privacy Policy</h1>
+            <p class="text-xl max-w-3xl mx-auto">
+                Your privacy is paramount to us. This policy outlines how Zingtava collects, uses, protects, and handles your Personally Identifiable Information (PII) in accordance with our services.
+            </p>
+        </div>
+    </section>
+
+    <!-- Privacy Policy Content Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-lg leading-relaxed text-gray-700">
+                <p class="mb-6">
+                    At Zingtava, we are deeply committed to protecting your privacy. We understand that your personal information is valuable, and we strive to be transparent about our data practices. This Privacy Policy details the types of information we collect from you when you visit Zingtava.com (the "Website"), how we use that information, with whom we share it, and the choices you have regarding our use of your data. By accessing or using our Website, you signify your acceptance of this Privacy Policy. If you do not agree with the terms of this policy, please do not use our Website.
+                </p>
+                <p class="mb-6">
+                    This policy applies to all visitors, users, and others who access the service ("Users"). We may update this policy from time to time to reflect changes in our practices or for other operational, legal, or regulatory reasons. We encourage you to review this Privacy Policy periodically to stay informed about how we are protecting the personal information we collect. Your continued use of the Website after any modifications to this Privacy Policy will constitute your acknowledgment of the modifications and your consent to abide and be bound by the modified Privacy Policy.
+                </p>
+
+                <h2 class="text-4xl font-bold text-accent-black mb-6 mt-10">1. Information We Collect</h2>
+                <p class="mb-4">
+                    We collect various types of information from and about users of our Website, including information that may personally identify you ("Personal Information"). The type of information we collect depends on how you interact with our Website and the services you use.
+                </p>
+
+                <h3 class="text-3xl font-bold text-primary mb-4 mt-6">1.1. Information You Provide to Us Directly</h3>
+                <p class="mb-4">
+                    When you interact with Zingtava, you may provide us with Personal Information directly. This includes, but is not limited to:
+                </p>
+                <ul class="list-disc list-inside text-gray-700 mb-4 pl-4">
+                    <li><strong>Contact Information:</strong> Such as your name, email address, postal address, and telephone number when you subscribe to our newsletter, create an account, participate in a contest or survey, or contact us directly. This information is essential for us to communicate with you, deliver requested services, and provide customer support.</li>
+                    <li><strong>Account Information:</strong> If we implement user accounts, this would include usernames, passwords, and other registration details. This data is used to secure your account and personalize your experience on the Website.</li>
+                    <li><strong>Demographic Information:</strong> Such as age, gender, dietary preferences, or cooking experience, which you may voluntarily provide when participating in surveys or profile creation. This helps us understand our audience better and tailor content.</li>
+                    <li><strong>Content Submissions:</strong> Information you submit when posting comments on our blog, submitting recipe reviews, or participating in community forums (if available). This includes the content of your comments, ratings, and any associated metadata.</li>
+                    <li><strong>Correspondence:</strong> Records and copies of your correspondence (including email addresses), if you contact us. This helps us track and resolve your inquiries efficiently.</li>
+                    <li><strong>Payment Information:</strong> If we introduce paid services or products (e.g., premium recipe packs, merchandise), we may collect payment details such as credit card numbers or other financial information. However, for most transactions, this will be processed by third-party payment processors, and we will not directly store sensitive payment card data.</li>
+                </ul>
+
+                <h3 class="text-3xl font-bold text-primary mb-4 mt-6">1.2. Information We Collect Automatically</h3>
+                <p class="mb-4">
+                    As you navigate through and interact with our Website, we may use automatic data collection technologies to collect certain information about your equipment, browsing actions, and patterns, including:
+                </p>
+                <ul class="list-disc list-inside text-gray-700 mb-4 pl-4">
+                    <li><strong>Usage Details:</strong> Information about your visits to our Website, including traffic data, location data, logs, and other communication data and the resources that you access and use on the Website. This helps us understand popular content and areas for improvement.</li>
+                    <li><strong>Device Information:</strong> Information about your computer and internet connection, including your IP address, operating system, browser type, mobile network information, and device identifiers. This helps us optimize our Website for various devices and troubleshoot technical issues.</li>
+                    <li><strong>Browsing Behavior:</strong> Details of your visits to our Website, including pages viewed, time spent on pages, clickstream data, and referring/exit pages. This data helps us analyze user engagement and improve content delivery.</li>
+                    <li><strong>Cookies and Other Tracking Technologies:</strong> We use cookies, web beacons, and similar technologies to collect information about your browsing activities. For more detailed information on how we use cookies, please refer to our dedicated <a href="cookies.html" class="text-primary hover:underline">Cookies Policy</a>. These technologies help us remember your preferences, track your usage, and deliver personalized content and advertisements.</li>
+                </ul>
+
+                <h3 class="text-3xl font-bold text-primary mb-4 mt-6">1.3. Information We Collect from Third Parties</h3>
+                <p class="mb-4">
+                    We may receive information about you from third-party sources, such as:
+                </p>
+                <ul class="list-disc list-inside text-gray-700 mb-4 pl-4">
+                    <li><strong>Social Media Platforms:</strong> If you choose to link your Zingtava account with a social media account (e.g., Facebook, Google), we may receive information from those platforms, such as your public profile information, friends list, and email address, depending on your privacy settings on those platforms.</li>
+                    <li><strong>Analytics Providers:</strong> We use third-party analytics services (e.g., Google Analytics) that collect data about your Website usage. This data is typically aggregated and anonymized but helps us understand user behavior and improve our services.</li>
+                    <li><strong>Advertising Partners:</strong> We may receive information from our advertising partners about your interactions with their ads on our Website or other sites, which helps us measure ad effectiveness and deliver more relevant advertisements.</li>
+                </ul>
+
+                <h2 class="text-4xl font-bold text-accent-black mb-6 mt-10">2. How We Use Your Information</h2>
+                <p class="mb-4">
+                    We use the information we collect for various purposes, including:
+                </p>
+                <ul class="list-disc list-inside text-gray-700 mb-4 pl-4">
+                    <li><strong>To Provide and Maintain Our Website:</strong> This includes operating the Website, providing access to recipes and blog content, and ensuring its functionality.</li>
+                    <li><strong>To Personalize Your Experience:</strong> Tailoring content, recommendations, and features based on your interests and past interactions. For example, suggesting recipes similar to ones you've viewed or liked.</li>
+                    <li><strong>To Improve Our Website and Services:</strong> Analyzing usage patterns, identifying popular content, and making enhancements to user interface, performance, and content quality. This involves A/B testing and user feedback analysis.</li>
+                    <li><strong>To Communicate with You:</strong> Sending newsletters, updates, promotional offers, and responding to your inquiries and feedback. This includes transactional emails related to your account or subscriptions.</li>
+                    <li><strong>To Process Transactions:</strong> If applicable, processing payments for any products or services you purchase through the Website.</li>
+                    <li><strong>For Marketing and Advertising:</strong> Delivering targeted advertisements and promotional messages that may be of interest to you, both on our Website and on third-party platforms. This may involve using aggregated or pseudonymized data.</li>
+                    <li><strong>To Conduct Research and Analytics:</strong> Performing internal research on user demographics, interests, and behavior to better understand and serve our audience. This often involves anonymized or aggregated data.</li>
+                    <li><strong>To Ensure Security and Prevent Fraud:</strong> Protecting our Website and users from unauthorized access, fraud, and other malicious activities. This includes monitoring for suspicious behavior and implementing security measures.</li>
+                    <li><strong>To Comply with Legal Obligations:</strong> Adhering to applicable laws, regulations, legal processes, and governmental requests. This may involve retaining certain data for compliance purposes.</li>
+                    <li><strong>To Enforce Our Terms and Conditions:</strong> Protecting our rights and property, and enforcing our <a href="terms.html" class="text-primary hover:underline">Terms and Conditions</a> and other policies.</li>
+                </ul>
+
+                <h2 class="text-4xl font-bold text-accent-black mb-6 mt-10">3. How We Share Your Information</h2>
+                <p class="mb-4">
+                    We may share your information with third parties in various circumstances, including:
+                </p>
+                <ul class="list-disc list-inside text-gray-700 mb-4 pl-4">
+                    <li><strong>Service Providers:</strong> We engage third-party companies and individuals to facilitate our services, provide services on our behalf, perform Website-related services, or assist us in analyzing how our Website is used. These service providers may have access to your Personal Information only to perform these tasks on our behalf and are obligated not to disclose or use it for any other purpose. Examples include hosting providers, analytics providers, email service providers, and customer support platforms.</li>
+                    <li><strong>Business Transfers:</strong> In the event that Zingtava is involved in a merger, acquisition, asset sale, or other business transaction, your Personal Information may be transferred as part of that transaction. We will provide notice before your Personal Information is transferred and becomes subject to a different Privacy Policy.</li>
+                    <li><strong>Affiliates:</strong> We may share information with our current or future affiliates, which are entities that control, are controlled by, or are under common control with Zingtava. This is done to provide integrated services and for internal administrative purposes.</li>
+                    <li><strong>With Your Consent:</strong> We may disclose your Personal Information for any other purpose with your explicit consent. For example, if you agree to participate in a specific promotion that requires sharing your data with a partner.</li>
+                    <li><strong>Legal Requirements and Law Enforcement:</strong> We may disclose your Personal Information if required to do so by law or in response to valid requests by public authorities (e.g., a court order or a government agency). This includes situations where we believe in good faith that such action is necessary to comply with a legal obligation, protect the rights or property of Zingtava, prevent or investigate possible wrongdoing in connection with the Website, or protect the personal safety of users of the Website or the public.</li>
+                    <li><strong>Aggregated or Anonymized Data:</strong> We may share aggregated or anonymized information that does not directly identify you with third parties for various purposes, including marketing, advertising, research, or other business uses. For example, we might share statistics about the most popular recipes or user demographics.</li>
+                </ul>
+
+                <h2 class="text-4xl font-bold text-accent-black mb-6 mt-10">4. Data Security</h2>
+                <p class="mb-4">
+                    The security of your Personal Information is very important to us. We implement a variety of security measures designed to protect your Personal Information from unauthorized access, use, alteration, and disclosure. These measures include:
+                </p>
+                <ul class="list-disc list-inside text-gray-700 mb-4 pl-4">
+                    <li><strong>Encryption:</strong> We use Secure Socket Layer (SSL) technology to encrypt data transmitted between your browser and our servers, particularly for sensitive information.</li>
+                    <li><strong>Access Controls:</strong> Access to your Personal Information is restricted to authorized employees, contractors, and agents who need to know that information in order to operate, develop, or improve our services. They are subject to strict contractual confidentiality obligations.</li>
+                    <li><strong>Regular Security Audits:</strong> We regularly review our information collection, storage, and processing practices, including physical security measures, to guard against unauthorized access to systems.</li>
+                    <li><strong>Data Minimization:</strong> We strive to collect only the Personal Information that is necessary for the purposes outlined in this policy.</li>
+                    <li><strong>Third-Party Security:</strong> We require our service providers to implement and maintain appropriate security measures to protect the Personal Information they process on our behalf.</li>
+                </ul>
+                <p class="mb-6">
+                    While we strive to use commercially acceptable means to protect your Personal Information, no method of transmission over the Internet or method of electronic storage is 100% secure. Therefore, we cannot guarantee its absolute security. You also play a crucial role in protecting your information by using strong, unique passwords and keeping them confidential.
+                </p>
+
+                <h2 class="text-4xl font-bold text-accent-black mb-6 mt-10">5. Your Data Protection Rights</h2>
+                <p class="mb-4">
+                    Depending on your location and applicable data protection laws (e.g., GDPR for European users, CCPA for California residents), you may have certain rights regarding your Personal Information. These rights may include:
+                </p>
+                <ul class="list-disc list-inside text-gray-700 mb-4 pl-4">
+                    <li><strong>Right to Access:</strong> You have the right to request copies of your Personal Information that we hold.</li>
+                    <li><strong>Right to Rectification:</strong> You have the right to request that we correct any information you believe is inaccurate or complete information you believe is incomplete.</li>
+                    <li><strong>Right to Erasure (Right to Be Forgotten):</strong> You have the right to request that we erase your Personal Information, under certain conditions.</li>
+                    <li><strong>Right to Restrict Processing:</strong> You have the right to request that we restrict the processing of your Personal Information, under certain conditions.</li>
+                    <li><strong>Right to Object to Processing:</strong> You have the right to object to our processing of your Personal Information, under certain conditions.</li>
+                    <li><strong>Right to Data Portability:</strong> You have the right to request that we transfer the data that we have collected to another organization, or directly to you, under certain conditions.</li>
+                    <li><strong>Right to Withdraw Consent:</strong> If our processing of your Personal Information is based on your consent, you have the right to withdraw that consent at any time. This will not affect the lawfulness of processing based on consent before its withdrawal.</li>
+                </ul>
+                <p class="mb-6">
+                    To exercise any of these rights, please contact us using the contact details provided in the "Contact Us" section below. We will respond to your request within a reasonable timeframe and in accordance with applicable laws. Please note that we may require you to verify your identity before responding to such requests.
+                </p>
+
+                <h2 class="text-4xl font-bold text-accent-black mb-6 mt-10">6. Third-Party Links</h2>
+                <p class="mb-4">
+                    Our Website may contain links to other websites that are not operated by us. If you click on a third-party link, you will be directed to that third party's site. We strongly advise you to review the Privacy Policy of every site you visit. We have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party sites or services. This Privacy Policy applies solely to information collected by Zingtava.
+                </p>
+
+                <h2 class="text-4xl font-bold text-accent-black mb-6 mt-10">7. Children's Privacy</h2>
+                <p class="mb-4">
+                    Our Website is not intended for use by children under the age of 13. We do not knowingly collect personally identifiable information from anyone under the age of 13. If you are a parent or guardian and you are aware that your child has provided us with Personal Information, please contact us. If we become aware that we have collected Personal Information from children without verification of parental consent, we take steps to remove that information from our servers.
+                </p>
+
+                <h2 class="text-4xl font-bold text-accent-black mb-6 mt-10">8. International Data Transfers</h2>
+                <p class="mb-4">
+                    Your information, including Personal Information, may be transferred to — and maintained on — computers located outside of your state, province, country, or other governmental jurisdiction where the data protection laws may differ from those of your jurisdiction. If you are located outside of [Your Country/Region, e.g., European Union] and choose to provide information to us, please note that we transfer the data, including Personal Information, to [Your Country/Region, e.g., India] and process it there. Your consent to this Privacy Policy followed by your submission of such information represents your agreement to that transfer. We will take all steps reasonably necessary to ensure that your data is treated securely and in accordance with this Privacy Policy and no transfer of your Personal Information will take place to an organization or a country unless there are adequate controls in place including the security of your data and other personal information.
+                </p>
+
+                <h2 class="text-4xl font-bold text-accent-black mb-6 mt-10">9. Changes to This Privacy Policy</h2>
+                <p class="mb-4">
+                    We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date at the top of this Privacy Policy. You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page. If we make significant changes, we may provide more prominent notice, such as through email or a notification on our Website.
+                </p>
+
+                <h2 class="text-4xl font-bold text-accent-black mb-6 mt-10">10. Contact Us</h2>
+                <p class="mb-4">
+                    If you have any questions about this Privacy Policy, our data practices, or if you would like to exercise your data protection rights, please contact us:
+                </p>
+                <ul class="list-disc list-inside text-gray-700 mb-4 pl-4">
+                    <li>By email: <a href="mailto:privacy@zingtava.com" class="text-primary hover:underline">privacy@zingtava.com</a></li>
+                    <li>By visiting this page on our website: <a href="contact.html" class="text-primary hover:underline">Contact Us</a></li>
+                    <li>By mail: Zingtava Headquarters, 123 Flavor Street, Spice District, Umami City, Global Region 78901</li>
+                </ul>
+                <p class="mb-6">
+                    We are dedicated to addressing your concerns and ensuring your privacy is respected.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Satisfaction Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-5xl font-extrabold text-accent-black mb-8">Your Satisfaction, Our Priority!</h2>
+            <div class="max-w-3xl mx-auto text-lg leading-relaxed text-gray-700">
+                <p class="mb-6">
+                    At Zingtava, your culinary journey and satisfaction are at the heart of everything we do. We are committed to providing you with high-quality, delicious, and easy-to-follow recipes that consistently deliver fantastic results. Our team works tirelessly to test and refine every dish, ensuring that when you follow our instructions, you're set up for success in your kitchen.
+                </p>
+                <p class="mb-6">
+                    We value your feedback immensely. If you have any questions, suggestions, or encounter any issues with our recipes or website, please do not hesitate to reach out to us. Your insights help us to continuously improve and tailor our content to your needs. We believe in fostering a vibrant and supportive community of home cooks, and your happiness is our ultimate reward. Join our Zingtava family and let's create amazing flavors together!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Disclaimer Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-5xl font-extrabold text-center text-accent-black mb-8">Disclaimer</h2>
+            <div class="max-w-4xl mx-auto text-sm leading-relaxed text-gray-600">
+                <p class="mb-4">
+                    The information provided on Zingtava.com (the "Website") is for general informational and culinary purposes only. All recipes, cooking instructions, tips, and dietary information are offered in good faith and for educational purposes. While Zingtava strives to provide accurate and up-to-date information, we make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability, or availability with respect to the Website or the information, products, services, or related graphics contained on the Website for any purpose. Any reliance you place on such information is therefore strictly at your own risk.
+                </p>
+                <p class="mb-4">
+                    <strong>Allergens and Dietary Restrictions:</strong> Recipes on this Website may contain common allergens such as nuts, dairy, gluten, soy, eggs, shellfish, and other ingredients that can cause allergic reactions. It is the sole responsibility of the user to identify and avoid ingredients that may cause allergic reactions or conflict with their dietary restrictions. Zingtava cannot be held responsible for any adverse reactions to food consumed as a result of following recipes or information on this Website. Always read food labels carefully and consult with a healthcare professional or registered dietitian if you have any concerns about allergies or specific dietary needs.
+                </p>
+                <p class="mb-4">
+                    <strong>Cooking Safety:</strong> Cooking involves inherent risks, including but not limited to cuts, burns, and other injuries. Users are advised to exercise caution and follow all standard kitchen safety practices while preparing any recipe from this Website. Ensure proper handling of knives, hot surfaces, and cooking equipment. Children should always be supervised by an adult when in the kitchen. Zingtava is not responsible for any accidents, injuries, or damages that may occur as a result of following the recipes or instructions provided.
+                </p>
+                <p class="mb-4">
+                    <strong>Recipe Outcomes:</strong> The results of recipes may vary depending on factors such as ingredient freshness, cooking equipment, individual cooking skills, and adherence to instructions. Zingtava does not guarantee specific outcomes or results for any recipe. Nutritional information, if provided, is an estimate only and should not be considered a substitute for professional nutritional advice.
+                </p>
+                <p class="mb-4">
+                    <strong>External Links:</strong> This Website may contain links to other websites that are not provided or maintained by or in any way affiliated with Zingtava. Please note that Zingtava does not guarantee the accuracy, relevance, timeliness, or completeness of any information on these external websites. The inclusion of any links does not necessarily imply a recommendation or endorse the views expressed within them.
+                </p>
+                <p class="mb-4">
+                    <strong>Intellectual Property:</strong> All content on this Website, including text, images, graphics, and recipes, is the intellectual property of Zingtava unless otherwise stated. Unauthorized reproduction or distribution of any content from this Website is strictly prohibited.
+                </p>
+                <p class="mb-4">
+                    By using this Website, you hereby agree to this disclaimer and its terms. If you do not agree with any part of this disclaimer, please do not use our Website. Zingtava reserves the right to modify this disclaimer at any time without prior notice. It is your responsibility to review this disclaimer periodically for changes.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-accent-black text-white py-10">
+        <div class="container mx-auto px-4 text-center">
+            <div class="mb-6">
+                <h3 class="text-2xl font-bold text-accent-gold mb-2">Zingtava Headquarters</h3>
+                <p class="text-gray-400">
+                    123 Flavor Street, Spice District,<br>
+                    Umami City, Global Region 78901<br>
+                    Phone: +1 (555) 123-4567<br>
+                    Email: info@zingtava.com
+                </p>
+            </div>
+            <nav class="mb-6">
+                <ul class="flex flex-wrap justify-center space-x-6 text-lg font-semibold">
+                    <li><a href="index.html" class="text-gray-300 hover:text-primary">Home</a></li>
+                    <li><a href="blog.html" class="text-gray-300 hover:text-primary">Blog</a></li>
+                    <li><a href="privacy.html" class="text-gray-300 hover:text-primary">Privacy</a></li>
+                    <li><a href="terms.html" class="text-gray-300 hover:text-primary">Terms</a></li>
+                    <li><a href="cookies.html" class="text-gray-300 hover:text-primary">Cookies</a></li>
+                    <li><a href="contact.html" class="text-gray-300 hover:text-primary">Contact</a></li>
+                </ul>
+            </nav>
+            <p class="text-gray-500 text-sm">&copy; 2025 Zingtava. All rights reserved. Sizzle. Slurp. Snack. is a registered trademark.</p>
+        </div>
+    </footer>
+</body>
+</html>

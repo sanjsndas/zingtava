@@ -1,0 +1,1687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zingtava Cookies Policy</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f8f8; /* Light grey background */
+            color: #212121; /* Soy Black for text */
+        }
+        .text-primary { color: #F44336; } /* Chili Red */
+        .bg-primary { background-color: #F44336; }
+        .text-accent-green { color: #8BC34A; } /* Wasabi Green */
+        .bg-accent-green { background-color: #8BC34A; }
+        .text-accent-gold { color: #FBC02D; } /* Ginger Gold */
+        .bg-accent-gold { background-color: #FBC02D; }
+        .text-accent-black { color: #212121; } /* Soy Black */
+        .bg-accent-black { background-color: #212121; }
+
+        /* Custom styles for rounded corners and shadows */
+        .card {
+            border-radius: 1.5rem; /* More rounded corners */
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05); /* Soft shadow */
+        }
+        .btn {
+            border-radius: 9999px; /* Pill shape */
+            transition: all 0.3s ease;
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+        .container {
+            max-width: 1200px;
+        }
+        /* Specific styling for navigation links */
+        nav a {
+            position: relative;
+            padding-bottom: 0.25rem;
+        }
+        nav a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #F44336; /* Chili Red underline */
+            transition: width 0.3s ease-in-out;
+        }
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        /* Cookie Consent Banner Styling */
+        #cookieConsentBanner {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #212121; /* Soy Black */
+            color: white;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+            display: none; /* Hidden by default */
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-top-left-radius: 1rem;
+            border-top-right-radius: 1rem;
+        }
+        #cookieConsentBanner p {
+            margin-bottom: 1rem;
+            max-width: 800px;
+            font-size: 1.125rem; /* text-lg */
+            line-height: 1.75rem; /* leading-relaxed */
+        }
+        #cookieConsentBanner .cookie-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+        }
+        #cookieConsentBanner .cookie-buttons button {
+            padding: 0.75rem 2rem;
+            font-size: 1.125rem;
+            font-weight: 600;
+            border-radius: 9999px; /* Pill shape */
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        #cookieConsentBanner .cookie-buttons .accept-btn {
+            background-color: #F44336; /* Chili Red */
+            color: white;
+            border: 2px solid #F44336;
+        }
+        #cookieConsentBanner .cookie-buttons .accept-btn:hover {
+            background-color: #d32f2f; /* Darker Chili Red */
+            border-color: #d32f2f;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        #cookieConsentBanner .cookie-buttons .decline-btn {
+            background-color: transparent;
+            color: #FBC02D; /* Ginger Gold */
+            border: 2px solid #FBC02D;
+        }
+        #cookieConsentBanner .cookie-buttons .decline-btn:hover {
+            background-color: #FBC02D;
+            color: #212121; /* Soy Black */
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        #cookieConsentBanner a {
+            color: #FBC02D; /* Ginger Gold */
+            text-decoration: underline;
+        }
+        #cookieConsentBanner a:hover {
+            color: #FFEB3B; /* Lighter Ginger Gold */
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <!-- Header Section -->
+    <header class="bg-white shadow-sm py-4">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <!-- Logo Concept: Wok with noodles flying + chopsticks -->
+                <svg class="w-10 h-10 text-primary mr-2" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
+                    <path d="M12 6.5c-2.49 0-4.5 2.01-4.5 4.5s2.01 4.5 4.5 4.5 4.5-2.01 4.5-4.5-2.01-4.5-4.5-4.5zm0 7c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                    <path d="M18.36 5.64c-1.17-1.17-3.07-1.17-4.24 0l-2.12 2.12c-.39.39-.39 1.02 0 1.41l2.83 2.83c.39.39 1.02.39 1.41 0l2.12-2.12c1.17-1.17 1.17-3.07 0-4.24zM5.64 18.36c1.17 1.17 3.07 1.17 4.24 0l2.12-2.12c.39-.39.39-1.02 0-1.41l-2.83-2.83c-.39-.39-1.02-.39-1.41 0l-2.12 2.12c-1.17 1.17-1.17 3.07 0 4.24z"/>
+                </svg>
+                <a href="index.html" class="text-3xl font-extrabold text-accent-black tracking-tight">Zingtava</a>
+            </div>
+            <nav>
+                <ul class="flex space-x-8 text-lg font-semibold">
+                    <li><a href="index.html" class="text-accent-black hover:text-primary">Home</a></li>
+                    <li><a href="blog.html" class="text-accent-black hover:text-primary">Blog</a></li>
+                    <li><a href="privacy.html" class="text-accent-black hover:text-primary">Privacy</a></li>
+                    <li><a href="terms.html" class="text-accent-black hover:text-primary">Terms</a></li>
+                    <li><a href="cookies.html" class="text-accent-black hover:text-primary">Cookies</a></li>
+                    <li><a href="contact.html" class="text-accent-black hover:text-primary">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Cookies Hero Section -->
+    <section class="py-20 bg-accent-gold text-accent-black text-center">
+        <div class="container mx-auto px-4">
+            <h1 class="text-6xl font-extrabold mb-4">Our Cookies Policy</h1>
+            <p class="text-xl max-w-2xl mx-auto">
+                Understanding how Zingtava uses cookies and similar technologies to enhance your culinary journey.
+            </p>
+        </div>
+    </section>
+
+    <!-- Cookies Content Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="max-w-5xl mx-auto bg-white p-8 card">
+                <h2 class="text-4xl font-bold text-accent-black mb-8 text-center">What Are Cookies?</h2>
+                <p class="text-lg leading-relaxed text-gray-700 mb-8">
+                    Cookies are small text files that are placed on your computer or mobile device when you visit a website. They are widely used to make websites work more efficiently, as well as to provide information to the owners of the site. Cookies enable a website to remember your actions and preferences (such as login, language, font size, and other display preferences) over a period, so you don’t have to keep re-entering them whenever you come back to the site or browse from one page to another. They play a crucial role in enhancing user experience and delivering personalized content. Without cookies, websites would have no memory of your past activities, making every visit a fresh start, which would be highly inconvenient for many functionalities. For instance, an online shopping cart would not be able to remember the items you added as you navigate between product pages.
+                </p>
+
+                <h2 class="text-4xl font-bold text-accent-black mb-8 text-center">How We Use Cookies</h2>
+                <p class="text-lg leading-relaxed text-gray-700 mb-8">
+                    At Zingtava, we use cookies for various purposes to provide you with a seamless, efficient, and personalized browsing experience. Our use of cookies falls into several categories, each designed to improve different aspects of our website's functionality and your interaction with it. We utilize both first-party cookies, which are set by our website, and third-party cookies, which are set by external services that we integrate for various functionalities like analytics or advertising. The data collected through cookies helps us understand user behavior, optimize content, and ensure the security and performance of our platform. We are committed to transparency regarding our cookie usage and provide you with options to manage your preferences.
+                </p>
+
+                <h2 class="text-4xl font-bold text-accent-black mb-8 text-center">Types of Cookies We Use and Their Purposes</h2>
+                <div class="space-y-10 text-lg leading-relaxed text-gray-700">
+                    <!-- Point 1 -->
+                    <div>
+                        <h3 class="text-3xl font-bold text-primary mb-4">1. Strictly Necessary Cookies (Essential Cookies)</h3>
+                        <p class="mb-2">
+                            These cookies are fundamental for the operation of our website. They enable core functionalities such as page navigation, access to secure areas, and essential services like shopping carts or user authentication. Without these cookies, the website would not function correctly, and you would be unable to utilize many of its basic features. They are typically set only in response to actions made by you which amount to a request for services, such as logging in or filling in forms. Because they are essential for the website's basic operation, they do not require your consent and cannot be switched off in our systems. You can set your browser to block or alert you about these cookies, but some parts of the site will not work.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Purpose:</strong> To ensure the fundamental operability and security of the website.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Examples:</strong> Session cookies that keep you logged in, security cookies that prevent fraudulent use of login credentials, and cookies that remember your cookie consent preferences.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Impact of Disabling:</strong> Disabling these cookies will severely impair the website's functionality and may prevent you from accessing secure areas or using essential services.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Data Collected:</strong> Typically anonymous session IDs, authentication tokens, and basic preference flags. No personal data directly identifying you is stored in these cookies.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Duration:</strong> Often session-based, meaning they are deleted once you close your browser, or persistent for a short period to remember your consent.
+                        </p>
+                        <p class="mb-2">
+                            <strong>First-party/Third-party:</strong> Primarily first-party cookies set by Zingtava.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Legal Basis:</strong> Legitimate interest, as they are necessary for providing the requested service.
+                        </p>
+                        <p class="mb-2">
+                            <strong>User Control:</strong> Cannot be disabled via our consent tool, but can be managed through browser settings (though this is not recommended).
+                        </p>
+                        <p>
+                            <strong>Transparency:</strong> We transparently inform you about their necessity for the website's proper functioning.
+                        </p>
+                    </div>
+
+                    <!-- Point 2 -->
+                    <div>
+                        <h3 class="text-3xl font-bold text-primary mb-4">2. Performance Cookies (Analytical Cookies)</h3>
+                        <p class="mb-2">
+                            These cookies collect information about how visitors use our website, for instance, which pages visitors go to most often, and if they get error messages from web pages. These cookies do not collect information that identifies a visitor. All information these cookies collect is aggregated and therefore anonymous. It is only used to improve how a website works. By understanding how users interact with our site, we can identify areas for improvement, optimize content, and enhance overall user experience. This data helps us make informed decisions about website design, navigation, and content strategy.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Purpose:</strong> To measure and improve the performance of our website.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Examples:</strong> Google Analytics cookies, which track page views, bounce rates, and user paths.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Impact of Disabling:</strong> Disabling these cookies will not affect the core functionality of the website, but it will limit our ability to understand and improve our site based on user behavior.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Data Collected:</strong> Anonymous data such as IP addresses (often anonymized), browser types, operating systems, referring URLs, and website navigation patterns.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Duration:</strong> Persistent, ranging from a few hours to several years, depending on the specific cookie.
+                        </p>
+                        <p class="mb-2">
+                            <strong>First-party/Third-party:</strong> Can be both first-party (e.g., our own analytics) or third-party (e.g., Google Analytics).
+                        </p>
+                        <p class="mb-2">
+                            <strong>Legal Basis:</strong> Consent, as they are not strictly necessary for the website's operation.
+                        </p>
+                        <p class="mb-2">
+                            <strong>User Control:</strong> Can be accepted or declined via our cookie consent banner.
+                        </p>
+                        <p>
+                            <strong>Transparency:</strong> We explain their role in website improvement and provide clear opt-out options.
+                        </p>
+                    </div>
+
+                    <!-- Point 3 -->
+                    <div>
+                        <h3 class="text-3xl font-bold text-primary mb-4">3. Functionality Cookies</h3>
+                        <p class="mb-2">
+                            Functionality cookies allow our website to remember choices you make (such as your user name, language, or the region you are in) and provide enhanced, more personal features. For instance, they can remember changes you have made to text size, fonts, and other parts of web pages that you can customize. They may also be used to provide services you have asked for, such as watching a video or commenting on a blog. The information these cookies collect may be anonymized, and they cannot track your browsing activity on other websites. They are designed to improve your convenience and personalize your experience on our site.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Purpose:</strong> To remember user preferences and provide enhanced, personalized features.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Examples:</strong> Remembering your chosen language, saving login details for future visits, or recalling items in a shopping cart across sessions.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Impact of Disabling:</strong> Disabling these cookies may result in a less personalized experience and require you to re-enter preferences or information more frequently.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Data Collected:</strong> Preferences you set, such as language, region, and sometimes partially anonymized identifiers linked to your preferences.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Duration:</strong> Persistent, lasting for varying periods depending on the specific function.
+                        </p>
+                        <p class="mb-2">
+                            <strong>First-party/Third-party:</strong> Can be both first-party or third-party (e.g., for embedded video players).
+                        </p>
+                        <p class="mb-2">
+                            <strong>Legal Basis:</strong> Consent, as they enhance user experience but are not strictly necessary.
+                        </p>
+                        <p class="mb-2">
+                            <strong>User Control:</strong> Can be accepted or declined via our cookie consent banner.
+                        </p>
+                        <p>
+                            <strong>Transparency:</strong> We explain how they personalize your experience and offer control over their use.
+                        </p>
+                    </div>
+
+                    <!-- Point 4 -->
+                    <div>
+                        <h3 class="text-3xl font-bold text-primary mb-4">4. Targeting/Advertising Cookies</h3>
+                        <p class="mb-2">
+                            These cookies are used to deliver advertisements more relevant to you and your interests. They are also used to limit the number of times you see an advertisement as well as help measure the effectiveness of the advertising campaign. They are usually placed by advertising networks with the website operator’s permission. They remember that you have visited a website and this information is shared with other organizations such as advertisers. Quite often, targeting or advertising cookies will be linked to site functionality provided by the other organization. These cookies help us and our partners understand your interests based on your browsing behavior, allowing us to show you more relevant ads both on and off our site.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Purpose:</strong> To deliver relevant advertisements and track advertising campaign performance.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Examples:</strong> Cookies used by ad networks like Google Ads or social media platforms for retargeting.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Impact of Disabling:</strong> Disabling these cookies will not stop you from seeing ads, but the ads you see may be less relevant to your interests.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Data Collected:</strong> Browsing history, interests inferred from visited pages, and sometimes demographic data (if provided to ad networks).
+                        </p>
+                        <p class="mb-2">
+                            <strong>Duration:</strong> Persistent, often lasting for several months or years.
+                        </p>
+                        <p class="mb-2">
+                            <strong>First-party/Third-party:</strong> Primarily third-party cookies set by advertising partners.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Legal Basis:</strong> Consent, as they are used for marketing and tracking purposes.
+                        </p>
+                        <p class="mb-2">
+                            <strong>User Control:</strong> Can be accepted or declined via our cookie consent banner.
+                        </p>
+                        <p>
+                            <strong>Transparency:</strong> We clearly state their purpose for advertising and provide an easy opt-out mechanism.
+                        </p>
+                    </div>
+
+                    <!-- Point 5 -->
+                    <div>
+                        <h3 class="text-3xl font-bold text-primary mb-4">5. First-Party Cookies</h3>
+                        <p class="mb-2">
+                            First-party cookies are cookies set by the website you are visiting (in this case, Zingtava.com). They are generally used to make the website work more efficiently and to enhance your browsing experience. These cookies are directly controlled by us and are essential for many of the site's core functions, such as maintaining your login session, remembering your language preferences, or keeping items in your shopping cart. They help us provide a consistent and personalized experience as you navigate through our site. The information collected by first-party cookies is typically used only by Zingtava and is not shared with external third parties for their independent use.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Purpose:</strong> To enable core website functionality and remember user-specific settings for a smoother experience.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Examples:</strong> Session IDs, language preferences, user authentication tokens.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Impact of Disabling:</strong> Can significantly impact website usability, especially for essential functions like logging in or making purchases.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Data Collected:</strong> Data related to your interaction with our site, often anonymized or pseudonymized.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Duration:</strong> Varies from session-based to persistent.
+                        </p>
+                        <p class="mb-2">
+                            <strong>First-party/Third-party:</strong> Exclusively first-party.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Legal Basis:</strong> Can be legitimate interest (for essential cookies) or consent (for non-essential functionality cookies).
+                        </p>
+                        <p class="mb-2">
+                            <strong>User Control:</strong> Managed through our consent banner or browser settings.
+                        </p>
+                        <p>
+                            <strong>Transparency:</strong> We clearly distinguish these from third-party cookies and explain their role.
+                        </p>
+                    </div>
+
+                    <!-- Point 6 -->
+                    <div>
+                        <h3 class="text-3xl font-bold text-primary mb-4">6. Third-Party Cookies</h3>
+                        <p class="mb-2">
+                            Third-party cookies are cookies set by a domain other than the one you are visiting. These are typically used for cross-site tracking, retargeting, and serving advertisements. For example, if you visit a website that has an embedded YouTube video, YouTube might set a cookie on your browser. These cookies allow third-party services, like analytics providers, social media platforms, or advertising networks, to collect information about your browsing activity across different websites. This data is then used by these third parties for their own purposes, such as building a profile of your interests to deliver targeted ads.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Purpose:</strong> To enable external services (analytics, advertising, social media integrations) and track user behavior across websites.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Examples:</strong> Google Analytics, Facebook Pixel, embedded content from YouTube or Vimeo.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Impact of Disabling:</strong> May reduce the relevance of advertisements you see and limit some embedded content functionality.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Data Collected:</strong> Browsing patterns, demographic data, and interactions with embedded content, often used for profiling.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Duration:</strong> Typically persistent, lasting for extended periods.
+                        </p>
+                        <p class="mb-2">
+                            <strong>First-party/Third-party:</strong> Exclusively third-party.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Legal Basis:</strong> Primarily consent, as they are not strictly necessary for the website's core function.
+                        </p>
+                        <p class="mb-2">
+                            <strong>User Control:</strong> Can be accepted or declined via our cookie consent banner.
+                        </p>
+                        <p>
+                            <strong>Transparency:</strong> We identify these cookies and explain their role in third-party services.
+                        </p>
+                    </div>
+
+                    <!-- Point 7 -->
+                    <div>
+                        <h3 class="text-3xl font-bold text-primary mb-4">7. Session Cookies</h3>
+                        <p class="mb-2">
+                            Session cookies are temporary cookies that remain in your browser's cookie file only until you leave the site. They are essential for navigating the website and performing various actions within a single browsing session. For example, they allow you to carry information across pages of our site and avoid having to re-enter information. Without session cookies, if you were to add items to a shopping cart, then navigate to another page, the items would disappear from your cart. They are deleted as soon as you close your web browser, making them less intrusive in terms of long-term tracking.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Purpose:</strong> To maintain user state and enable seamless navigation within a single browsing session.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Examples:</strong> Shopping cart contents, login session management, form data retention.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Impact of Disabling:</strong> Will make the website largely unusable for many interactive features, as your actions won't be remembered across pages.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Data Collected:</strong> Temporary session identifiers and data related to your current interaction with the site.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Duration:</strong> Deleted automatically when the browser is closed.
+                        </p>
+                        <p class="mb-2">
+                            <strong>First-party/Third-party:</strong> Can be both first-party or third-party depending on the service.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Legal Basis:</strong> Legitimate interest, as they are necessary for the basic functionality of interactive websites.
+                        </p>
+                        <p class="mb-2">
+                            <strong>User Control:</strong> Cannot typically be disabled without severely impacting site usability.
+                        </p>
+                        <p>
+                            <strong>Transparency:</strong> We explain their temporary nature and importance for site interaction.
+                        </p>
+                    </div>
+
+                    <!-- Point 8 -->
+                    <div>
+                        <h3 class="text-3xl font-bold text-primary mb-4">8. Persistent Cookies</h3>
+                        <p class="mb-2">
+                            Persistent cookies remain on your device for a set period specified in the cookie. They are activated each time you visit the website that created that particular cookie. These cookies are used to remember your preferences or actions across multiple sessions. For example, if you choose to "Remember Me" on a login page, a persistent cookie will store your login information so you don't have to enter it every time you visit. They are also commonly used for analytics, remembering user settings, and serving targeted advertisements over time. Unlike session cookies, they are not deleted when you close your browser.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Purpose:</strong> To remember user preferences and track behavior across multiple visits.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Examples:</strong> Remembering login details, language preferences, analytical tracking IDs.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Impact of Disabling:</strong> May lead to a less personalized experience and require more frequent re-entry of information.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Data Collected:</strong> User preferences, unique identifiers for tracking, and historical browsing data.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Duration:</strong> Can range from a few days to several years.
+                        </p>
+                        <p class="mb-2">
+                            <strong>First-party/Third-party:</strong> Can be both first-party or third-party.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Legal Basis:</strong> Consent, unless strictly necessary for a specific feature you've opted into (e.g., "Remember Me").
+                        </p>
+                        <p class="mb-2">
+                            <strong>User Control:</strong> Can be accepted or declined via our cookie consent banner.
+                        </p>
+                        <p>
+                            <strong>Transparency:</strong> We inform users about their longer lifespan and purpose.
+                        </p>
+                    </div>
+
+                    <!-- Point 9 -->
+                    <div>
+                        <h3 class="text-3xl font-bold text-primary mb-4">9. Secure Cookies</h3>
+                        <p class="mb-2">
+                            Secure cookies are cookies that can only be transmitted over an encrypted HTTPS connection. This means they are protected from being intercepted by unauthorized parties while in transit, enhancing the security of your data. When a cookie is marked as "secure," the browser will only send that cookie to the server if the request is being made over a secure channel (HTTPS). This is particularly important for cookies that contain sensitive information, such as session IDs or authentication tokens, to prevent man-in-the-middle attacks. We implement secure cookies wherever sensitive data is involved to protect your privacy and security.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Purpose:</strong> To enhance the security of data transmitted via cookies by ensuring encryption.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Examples:</strong> Session cookies for logged-in users, authentication tokens.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Impact of Disabling:</strong> Not directly controllable by users, but their absence would pose a security risk to sensitive interactions.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Data Collected:</strong> Same as other cookie types, but with added transmission security.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Duration:</strong> Varies depending on the cookie's primary type (session or persistent).
+                        </p>
+                        <p class="mb-2">
+                            <strong>First-party/Third-party:</strong> Can be both first-party or third-party.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Legal Basis:</strong> Legitimate interest and security best practices.
+                        </p>
+                        <p class="mb-2">
+                            <strong>User Control:</strong> Managed by the website's security configuration, not directly by user consent.
+                        </p>
+                        <p>
+                            <strong>Transparency:</strong> We assure users of our commitment to data security through such measures.
+                        </p>
+                    </div>
+
+                    <!-- Point 10 -->
+                    <div>
+                        <h3 class="text-3xl font-bold text-primary mb-4">10. HTTP-Only Cookies</h3>
+                        <p class="mb-2">
+                            HTTP-only cookies are a security feature that prevents client-side scripts (like JavaScript) from accessing the cookie. This makes it much harder for malicious scripts (e.g., cross-site scripting or XSS attacks) to steal sensitive session cookies. When a cookie is set with the "HttpOnly" flag, it means that the cookie can only be sent to the server as part of an HTTP request and cannot be accessed by JavaScript running in the browser. This significantly reduces the risk of session hijacking, where an attacker could steal a user's session cookie and impersonate them. We utilize HTTP-only cookies for critical authentication and session management purposes.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Purpose:</strong> To prevent cross-site scripting (XSS) attacks and enhance the security of sensitive cookies.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Examples:</strong> Session IDs, authentication tokens.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Impact of Disabling:</strong> Not directly controllable by users; their absence would increase security vulnerabilities.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Data Collected:</strong> Same as other cookie types, but with enhanced protection against client-side access.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Duration:</strong> Varies depending on the cookie's primary type.
+                        </p>
+                        <p class="mb-2">
+                            <strong>First-party/Third-party:</strong> Can be both first-party or third-party.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Legal Basis:</strong> Legitimate interest and security best practices.
+                        </p>
+                        <p class="mb-2">
+                            <strong>User Control:</strong> Managed by the website's security configuration, not directly by user consent.
+                        </p>
+                        <p>
+                            <strong>Transparency:</strong> We emphasize our security measures, including the use of HTTP-only cookies.
+                        </p>
+                    </div>
+
+                    <!-- Point 11 -->
+                    <div>
+                        <h3 class="text-3xl font-bold text-primary mb-4">11. SameSite Cookies</h3>
+                        <p class="mb-2">
+                            SameSite is a cookie attribute that helps mitigate the risk of cross-site request forgery (CSRF) attacks and information leakage. It works by controlling when cookies are sent with cross-site requests. There are three main values: 'Strict', 'Lax', and 'None'. 'Strict' means the cookie is only sent with requests originating from the same site. 'Lax' means the cookie is sent with same-site requests and top-level navigations from other sites (e.g., clicking a link). 'None' means the cookie is sent with all requests, including cross-site requests, but requires the 'Secure' attribute. We implement SameSite attributes to enhance the security and privacy of our users by preventing unintended cookie sharing across sites.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Purpose:</strong> To prevent CSRF attacks and control cross-site cookie transmission.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Examples:</strong> Session cookies, authentication cookies.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Impact of Disabling:</strong> Not directly controllable by users; their absence would increase security vulnerabilities.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Data Collected:</strong> Does not collect data itself; it's a security attribute for existing cookies.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Duration:</strong> Varies depending on the cookie's primary type.
+                        </p>
+                        <p class="mb-2">
+                            <strong>First-party/Third-party:</strong> Applicable to both first-party and third-party cookies.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Legal Basis:</strong> Legitimate interest and security best practices.
+                        </p>
+                        <p class="mb-2">
+                            <strong>User Control:</strong> Managed by the website's security configuration, not directly by user consent.
+                        </p>
+                        <p>
+                            <strong>Transparency:</strong> We highlight our use of modern security attributes like SameSite.
+                        </p>
+                    </div>
+
+                    <!-- Point 12 -->
+                    <div>
+                        <h3 class="text-3xl font-bold text-primary mb-4">12. User Authentication Cookies</h3>
+                        <p class="mb-2">
+                            These cookies are crucial for managing your login sessions on Zingtava. When you log in to your account, a user authentication cookie is set on your browser. This cookie allows our website to recognize you as an authenticated user as you navigate between different pages, eliminating the need for you to re-enter your credentials repeatedly. It ensures that only authorized users can access their personalized content, settings, and secure areas of the website. These cookies are typically secure and HTTP-only to protect your account from unauthorized access.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Purpose:</strong> To maintain user login sessions and provide access to authenticated areas.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Examples:</strong> Session IDs, encrypted user tokens.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Impact of Disabling:</strong> You would be unable to log in or maintain a session, making personalized features inaccessible.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Data Collected:</strong> User ID (often pseudonymized), session ID, and authentication status.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Duration:</strong> Typically session-based, or short-term persistent if "Remember Me" is selected.
+                        </p>
+                        <p class="mb-2">
+                            <strong>First-party/Third-party:</strong> Primarily first-party.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Legal Basis:</strong> Legitimate interest, as they are necessary for providing user account services.
+                        </p>
+                        <p class="mb-2">
+                            <strong>User Control:</strong> Essential for account functionality; managed by logging out.
+                        </p>
+                        <p>
+                            <strong>Transparency:</strong> We explain their role in securing and managing user accounts.
+                        </p>
+                    </div>
+
+                    <!-- Point 13 -->
+                    <div>
+                        <h3 class="text-3xl font-bold text-primary mb-4">13. Shopping Cart Cookies</h3>
+                        <p class="mb-2">
+                            For websites with e-commerce functionalities, shopping cart cookies are indispensable. These cookies allow you to add items to your cart and keep them there as you continue browsing the site or even if you leave and return later (for persistent shopping carts). They remember the products you've selected, their quantities, and any associated options, ensuring that your selections are preserved until you are ready to check out. Without these cookies, the shopping experience would be fragmented and frustrating, as your cart would empty with every page refresh or navigation.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Purpose:</strong> To store items in a user's shopping cart across pages or sessions.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Examples:</strong> Unique cart identifiers, product IDs, quantities.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Impact of Disabling:</strong> Will prevent the use of the shopping cart feature, making online purchases impossible.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Data Collected:</strong> Non-personal data related to cart contents.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Duration:</strong> Session-based or persistent (for a few days/weeks for abandoned carts).
+                        </p>
+                        <p class="mb-2">
+                            <strong>First-party/Third-party:</strong> Primarily first-party.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Legal Basis:</strong> Legitimate interest, as they are necessary for the e-commerce functionality.
+                        </p>
+                        <p class="mb-2">
+                            <strong>User Control:</strong> Essential for shopping; managed by clearing browser data.
+                        </p>
+                        <p>
+                            <strong>Transparency:</strong> We clarify their role in facilitating online shopping.
+                        </p>
+                    </div>
+
+                    <!-- Point 14 -->
+                    <div>
+                        <h3 class="text-3xl font-bold text-primary mb-4">14. Language Preference Cookies</h3>
+                        <p class="mb-2">
+                            These cookies remember your preferred language settings on our website. If Zingtava offers content in multiple languages, this cookie ensures that you consistently see the website in your chosen language without having to select it every time you visit. This enhances convenience and provides a more localized and comfortable user experience. By storing this preference, we can deliver content that is immediately relevant to your linguistic needs, making your interaction with our site more efficient and enjoyable.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Purpose:</strong> To remember the user's preferred language for displaying website content.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Examples:</strong> A cookie storing "en" for English or "es" for Spanish.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Impact of Disabling:</strong> You may need to manually select your language preference on each visit or page.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Data Collected:</strong> Your chosen language code.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Duration:</strong> Persistent, typically for a year or more.
+                        </p>
+                        <p class="mb-2">
+                            <strong>First-party/Third-party:</strong> Primarily first-party.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Legal Basis:</strong> Consent, as they enhance user experience.
+                        </p>
+                        <p class="mb-2">
+                            <strong>User Control:</strong> Can be accepted or declined via our cookie consent banner.
+                        </p>
+                        <p>
+                            <strong>Transparency:</strong> We explain how these cookies improve localization.
+                        </p>
+                    </div>
+
+                    <!-- Point 15 -->
+                    <div>
+                        <h3 class="text-3xl font-bold text-primary mb-4">15. Region/Location Preference Cookies</h3>
+                        <p class="mb-2">
+                            Similar to language preferences, these cookies store your region or location settings. This allows us to provide content, pricing, or services that are specific to your geographical area. For example, if we offer regional promotions or localized recipe variations, this cookie helps us display the most relevant information to you. It improves the relevance of the content you receive and ensures that your browsing experience is tailored to your specific location, enhancing overall user satisfaction and efficiency.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Purpose:</strong> To remember the user's preferred region or location for localized content.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Examples:</strong> A cookie storing a country code or regional preference.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Impact of Disabling:</strong> You may see generic content or need to manually select your region repeatedly.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Data Collected:</strong> Your chosen region or inferred location.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Duration:</strong> Persistent, typically for a year or more.
+                        </p>
+                        <p class="mb-2">
+                            <strong>First-party/Third-party:</strong> Primarily first-party.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Legal Basis:</strong> Consent, as they enhance user experience.
+                        </p>
+                        <p class="mb-2">
+                            <strong>User Control:</strong> Can be accepted or declined via our cookie consent banner.
+                        </p>
+                        <p>
+                            <strong>Transparency:</strong> We clarify their role in providing localized content.
+                        </p>
+                    </div>
+
+                    <!-- Point 16 -->
+                    <div>
+                        <h3 class="text-3xl font-bold text-primary mb-4">16. Cookie Consent Cookies</h3>
+                        <p class="mb-2">
+                            These are specific cookies that remember your choices regarding cookie consent. When you accept or decline cookies via our consent banner, a small cookie is set to record your preference. This prevents the banner from reappearing on every page load or during subsequent visits, ensuring a smoother browsing experience once you've made your choice. This cookie is essential for respecting your privacy choices and is typically a strictly necessary cookie itself, as it facilitates compliance with data protection regulations.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Purpose:</strong> To remember and respect your cookie consent preferences.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Examples:</strong> A cookie named "cookie_consent" with a value like "accepted" or "declined".
+                        </p>
+                        <p class="mb-2">
+                            <strong>Impact of Disabling:</strong> The cookie consent banner would reappear on every page load, disrupting your experience.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Data Collected:</strong> A simple flag indicating your consent choice.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Duration:</strong> Persistent, typically for 12 months, or until you clear your browser cookies.
+                        </p>
+                        <p class="mb-2">
+                            <strong>First-party/Third-party:</strong> Primarily first-party.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Legal Basis:</strong> Legal obligation (e.g., GDPR, CCPA) and legitimate interest.
+                        </p>
+                        <p class="mb-2">
+                            <strong>User Control:</strong> Managed by your interaction with the consent banner.
+                        </p>
+                        <p>
+                            <strong>Transparency:</strong> We explicitly state their role in managing your privacy choices.
+                        </p>
+                    </div>
+
+                    <!-- Point 17 -->
+                    <div>
+                        <h3 class="text-3xl font-bold text-primary mb-4">17. Load Balancing Cookies</h3>
+                        <p class="mb-2">
+                            In order to ensure our website performs optimally and remains accessible, especially during peak traffic, we may use load balancing cookies. These cookies distribute network traffic across multiple servers, preventing any single server from becoming overloaded. This ensures that our website remains fast and responsive for all users. The cookie simply directs your request to the most available server, ensuring a consistent and uninterrupted browsing experience. They do not store any personal information about you.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Purpose:</strong> To distribute website traffic efficiently across servers for optimal performance and availability.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Examples:</strong> Cookies that store a server ID or session affinity.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Impact of Disabling:</strong> Could lead to slower website performance or intermittent access issues during high traffic.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Data Collected:</strong> Anonymous server identifiers.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Duration:</strong> Session-based.
+                        </p>
+                        <p class="mb-2">
+                            <strong>First-party/Third-party:</strong> Primarily first-party.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Legal Basis:</strong> Legitimate interest, as they are essential for website stability and performance.
+                        </p>
+                        <p class="mb-2">
+                            <strong>User Control:</strong> Not directly controllable by users, as they are technical necessities.
+                        </p>
+                        <p>
+                            <strong>Transparency:</strong> We explain their role in maintaining website stability.
+                        </p>
+                    </div>
+
+                    <!-- Point 18 -->
+                    <div>
+                        <h3 class="text-3xl font-bold text-primary mb-4">18. Security Cookies</h3>
+                        <p class="mb-2">
+                            Beyond authentication, some cookies are specifically used for general security purposes. These cookies help us detect and prevent fraudulent activities, protect user data from unauthorized access, and ensure the overall integrity of our website. They might track suspicious login attempts, identify unusual browsing patterns that could indicate a security breach, or help validate user identity during sensitive transactions. These cookies are a critical component of our cybersecurity measures, working in the background to keep your interactions with Zingtava safe and secure.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Purpose:</strong> To enhance website security, detect fraud, and protect user data.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Examples:</strong> Cookies that identify suspicious activity, tokens for CSRF protection.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Impact of Disabling:</strong> Could compromise the security of your account and your data on our website.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Data Collected:</strong> Anonymous security flags, IP addresses, and behavioral patterns for anomaly detection.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Duration:</strong> Varies, often session-based or short-term persistent.
+                        </p>
+                        <p class="mb-2">
+                            <strong>First-party/Third-party:</strong> Primarily first-party.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Legal Basis:</strong> Legitimate interest, as they are fundamental for website and user security.
+                        </p>
+                        <p class="mb-2">
+                            <strong>User Control:</strong> Not directly controllable by users; essential for security.
+                        </p>
+                        <p>
+                            <strong>Transparency:</strong> We highlight our commitment to user security through these cookies.
+                        </p>
+                    </div>
+
+                    <!-- Point 19 -->
+                    <div>
+                        <h3 class="text-3xl font-bold text-primary mb-4">19. Analytics and Research Cookies</h3>
+                        <p class="mb-2">
+                            These cookies are a subset of performance cookies, specifically focused on gathering detailed insights for analytical and research purposes. They help us understand how users interact with our content, which recipes are most popular, how long users stay on certain pages, and what features they use. This data, always aggregated and anonymized where possible, is invaluable for guiding our content creation, website development, and overall strategy. It allows us to continuously refine and improve the Zingtava experience based on real user engagement, ensuring we provide the most valuable culinary resources.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Purpose:</strong> To gather detailed insights into user behavior for website improvement and content strategy.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Examples:</strong> Cookies from Google Analytics, Hotjar, or similar web analytics services.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Impact of Disabling:</strong> Limits our ability to understand user engagement and make data-driven improvements to the site.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Data Collected:</strong> Anonymous usage statistics, click paths, time spent on pages, and general demographic data.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Duration:</strong> Persistent, often for several months or years.
+                        </p>
+                        <p class="mb-2">
+                            <strong>First-party/Third-party:</strong> Can be both first-party or third-party.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Legal Basis:</strong> Consent, as they are not strictly necessary for basic functionality.
+                        </p>
+                        <p class="mb-2">
+                            <strong>User Control:</strong> Can be accepted or declined via our cookie consent banner.
+                        </p>
+                        <p>
+                            <strong>Transparency:</strong> We explain how this data helps us improve the Zingtava experience.
+                        </p>
+                    </div>
+
+                    <!-- Point 20 -->
+                    <div>
+                        <h3 class="text-3xl font-bold text-primary mb-4">20. A/B Testing Cookies</h3>
+                        <p class="mb-2">
+                            To optimize our website's design and functionality, we sometimes conduct A/B tests. These involve showing different versions of a page or feature to different segments of our audience to see which performs better. A/B testing cookies ensure that you consistently see the same version of a test during your visit, preventing a confusing experience. They also help us accurately measure the impact of changes by ensuring that user behavior is attributed to the correct test variation. This allows us to make data-backed decisions about what works best for our users.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Purpose:</strong> To facilitate A/B testing and ensure consistent user experience during tests.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Examples:</strong> Cookies storing the version of a page or feature you are exposed to.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Impact of Disabling:</strong> You might experience inconsistent page layouts or functionalities during tests.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Data Collected:</strong> Anonymous identifiers for test groups and version assignments.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Duration:</strong> Session-based or short-term persistent.
+                        </p>
+                        <p class="mb-2">
+                            <strong>First-party/Third-party:</strong> Can be both first-party or third-party (e.g., from A/B testing platforms).
+                        </p>
+                        <p class="mb-2">
+                            <strong>Legal Basis:</strong> Legitimate interest, as they are used for website optimization.
+                        </p>
+                        <p class="mb-2">
+                            <strong>User Control:</strong> Can be accepted or declined via our cookie consent banner.
+                        </p>
+                        <p>
+                            <strong>Transparency:</strong> We explain their role in website optimization and user experience improvement.
+                        </p>
+                    </div>
+
+                    <!-- Point 21 -->
+                    <div>
+                        <h3 class="text-3xl font-bold text-primary mb-4">21. Social Media Cookies</h3>
+                        <p class="mb-2">
+                            Zingtava may integrate with social media platforms (e.g., Facebook, Instagram, Pinterest) to allow you to share content, log in using your social credentials, or interact with our social feeds. These platforms may set their own cookies on your device when you visit our site. These cookies enable social media features like "Like" buttons, sharing content, and tracking your interactions with our content across their platforms. They also allow social media networks to track your browsing activity across the web to build a profile of your interests, which may then be used for targeted advertising on their platforms.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Purpose:</strong> To enable social media features and track interactions for social media platforms.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Examples:</strong> Facebook Pixel, Twitter tracking cookies.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Impact of Disabling:</strong> You may not be able to use social sharing features directly on our site, and social media ads may be less relevant.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Data Collected:</strong> Your interactions with social media features, browsing behavior, and potentially profile information if logged in.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Duration:</strong> Persistent, often for several months or years.
+                        </p>
+                        <p class="mb-2">
+                            <strong>First-party/Third-party:</strong> Primarily third-party.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Legal Basis:</strong> Consent, as they are not strictly necessary for website functionality.
+                        </p>
+                        <p class="mb-2">
+                            <strong>User Control:</strong> Can be accepted or declined via our cookie consent banner.
+                        </p>
+                        <p>
+                            <strong>Transparency:</strong> We inform users about the presence of social media cookies and their implications.
+                        </p>
+                    </div>
+
+                    <!-- Point 22 -->
+                    <div>
+                        <h3 class="text-3xl font-bold text-primary mb-4">22. Retargeting Cookies</h3>
+                        <p class="mb-2">
+                            Retargeting cookies are a specific type of advertising cookie used to show you ads for products or services you've previously shown interest in. For example, if you view a specific recipe on Zingtava but don't save it, a retargeting cookie might ensure you see an ad for that recipe or similar content when you visit other websites or social media platforms. These cookies help us deliver highly relevant advertising by reminding you of content you've engaged with, increasing the likelihood of your return to our site. They are a common tool in digital marketing to re-engage potential users.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Purpose:</strong> To deliver targeted advertisements to users who have previously visited our site.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Examples:</strong> Cookies from Google Ads, Facebook Ads, or other retargeting platforms.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Impact of Disabling:</strong> You will still see ads, but they will be less personalized and relevant to your past interactions with Zingtava.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Data Collected:</strong> Browsing history on our site, specific pages visited, and product/content views.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Duration:</strong> Persistent, typically for a few weeks or months.
+                        </p>
+                        <p class="mb-2">
+                            <strong>First-party/Third-party:</strong> Primarily third-party.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Legal Basis:</strong> Consent, as they are used for marketing purposes.
+                        </p>
+                        <p class="mb-2">
+                            <strong>User Control:</strong> Can be accepted or declined via our cookie consent banner.
+                        </p>
+                        <p>
+                            <strong>Transparency:</strong> We explain their role in personalized advertising.
+                        </p>
+                    </div>
+
+                    <!-- Point 23 -->
+                    <div>
+                        <h3 class="text-3xl font-bold text-primary mb-4">23. Conversion Tracking Cookies</h3>
+                        <p class="mb-2">
+                            Conversion tracking cookies help us understand the effectiveness of our marketing campaigns. These cookies are set when you click on an advertisement or a link that leads you to our website. They then track whether that click resulted in a desired action, such as signing up for our newsletter, downloading a recipe, or making a purchase. This anonymous data allows us to measure the return on investment of our advertising efforts and optimize our campaigns to reach more interested users. They do not collect personal identifying information.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Purpose:</strong> To measure the effectiveness of marketing campaigns by tracking user actions.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Examples:</strong> Google Ads conversion tracking, Facebook conversion pixel.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Impact of Disabling:</strong> Will not affect your browsing, but it will limit our ability to optimize marketing efforts.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Data Collected:</strong> Anonymous data about ad clicks and subsequent actions on our site.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Duration:</strong> Persistent, typically for a few weeks.
+                        </p>
+                        <p class="mb-2">
+                            <strong>First-party/Third-party:</strong> Can be both first-party or third-party.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Legal Basis:</strong> Consent, as they are used for marketing and analytical purposes.
+                        </p>
+                        <p class="mb-2">
+                            <strong>User Control:</strong> Can be accepted or declined via our cookie consent banner.
+                        </p>
+                        <p>
+                            <strong>Transparency:</strong> We explain their function in optimizing our marketing.
+                        </p>
+                    </div>
+
+                    <!-- Point 24 -->
+                    <div>
+                        <h3 class="text-3xl font-bold text-primary mb-4">24. Personalization Cookies</h3>
+                        <p class="mb-2">
+                            Beyond simple functionality, personalization cookies are used to tailor your experience on Zingtava to a much greater degree. These cookies might remember your favorite recipe categories, ingredients you frequently search for, or content you've previously viewed to recommend similar items. They create a more customized browsing environment, making it easier for you to discover content that aligns with your culinary interests. The goal is to make your visit as relevant and engaging as possible by adapting the website's offerings to your individual preferences.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Purpose:</strong> To personalize content and recommendations based on user behavior and preferences.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Examples:</strong> Cookies remembering viewed recipes, search history, or preferred dietary filters.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Impact of Disabling:</strong> Reduces the level of personalization you experience on the website.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Data Collected:</strong> Browsing history, content interactions, and explicit preferences.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Duration:</strong> Persistent, often for several months.
+                        </p>
+                        <p class="mb-2">
+                            <strong>First-party/Third-party:</strong> Primarily first-party, but can involve third-party personalization services.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Legal Basis:</strong> Consent, as they enhance user experience.
+                        </p>
+                        <p class="mb-2">
+                            <strong>User Control:</strong> Can be accepted or declined via our cookie consent banner.
+                        </p>
+                        <p>
+                            <strong>Transparency:</strong> We explain how these cookies create a tailored experience.
+                        </p>
+                    </div>
+
+                    <!-- Point 25 -->
+                    <div>
+                        <h3 class="text-3xl font-bold text-primary mb-4">25. User Interface Customization Cookies</h3>
+                        <p class="mb-2">
+                            These cookies remember settings related to the website's user interface, such as font size, layout preferences, or color schemes (if offered). They ensure that your chosen visual settings are maintained across visits, providing a consistent and comfortable viewing experience. For users with specific accessibility needs, these cookies are particularly helpful in preserving their preferred display settings. They are designed to make the website more adaptable to individual user requirements and improve overall usability.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Purpose:</strong> To store user interface display preferences.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Examples:</strong> Cookies remembering dark mode preference, text size settings.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Impact of Disabling:</strong> UI preferences may reset on each visit or page load.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Data Collected:</strong> Anonymous data about UI settings.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Duration:</strong> Persistent, typically for several months.
+                        </p>
+                        <p class="mb-2">
+                            <strong>First-party/Third-party:</strong> Primarily first-party.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Legal Basis:</strong> Consent, as they enhance user experience.
+                        </p>
+                        <p class="mb-2">
+                            <strong>User Control:</strong> Can be accepted or declined via our cookie consent banner.
+                        </p>
+                        <p>
+                            <strong>Transparency:</strong> We explain their role in customizing the website's appearance.
+                        </p>
+                    </div>
+
+                    <!-- Point 26 -->
+                    <div>
+                        <h3 class="text-3xl font-bold text-primary mb-4">26. Video Player Cookies</h3>
+                        <p class="mb-2">
+                            If Zingtava embeds videos from platforms like YouTube or Vimeo, these third-party services may set cookies on your device. These cookies are used to remember your video playback preferences (e.g., volume, quality), track video viewing statistics, and potentially personalize video recommendations. They enable the smooth functioning of embedded video content and allow the video platform to provide its services effectively. These cookies are governed by the respective video platform's privacy policies.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Purpose:</strong> To enable embedded video playback and track video consumption.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Examples:</strong> YouTube or Vimeo cookies.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Impact of Disabling:</strong> Embedded videos may not play or may lose your preferences.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Data Collected:</strong> Video viewing history, playback settings, and potentially user IDs if logged into the video platform.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Duration:</strong> Persistent, varying by platform.
+                        </p>
+                        <p class="mb-2">
+                            <strong>First-party/Third-party:</strong> Primarily third-party.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Legal Basis:</strong> Consent, as they are for third-party content.
+                        </p>
+                        <p class="mb-2">
+                            <strong>User Control:</strong> Can be accepted or declined via our cookie consent banner.
+                        </p>
+                        <p>
+                            <strong>Transparency:</strong> We clarify that these are third-party cookies from video providers.
+                        </p>
+                    </div>
+
+                    <!-- Point 27 -->
+                    <div>
+                        <h3 class="text-3xl font-bold text-primary mb-4">27. Commenting System Cookies</h3>
+                        <p class="mb-2">
+                            If Zingtava uses a third-party commenting system (e.g., Disqus), these services may set cookies to manage your comments, remember your login for the commenting system, and track your activity within their platform. These cookies facilitate a seamless commenting experience, allowing you to engage with our content and community. They may also be used by the commenting service for their own analytical or advertising purposes, as detailed in their respective privacy policies.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Purpose:</strong> To manage user comments and integrate third-party commenting services.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Examples:</strong> Disqus cookies.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Impact of Disabling:</strong> You may not be able to comment or your comments may not be remembered.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Data Collected:</strong> Commenting activity, user ID (if logged into the commenting system), and potentially IP address.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Duration:</strong> Persistent, varying by service.
+                        </p>
+                        <p class="mb-2">
+                            <strong>First-party/Third-party:</strong> Primarily third-party.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Legal Basis:</strong> Consent, as they are for third-party services.
+                        </p>
+                        <p class="mb-2">
+                            <strong>User Control:</strong> Can be accepted or declined via our cookie consent banner.
+                        </p>
+                        <p>
+                            <strong>Transparency:</strong> We explain their role in enabling comments and user interaction.
+                        </p>
+                    </div>
+
+                    <!-- Point 28 -->
+                    <div>
+                        <h3 class="text-3xl font-bold text-primary mb-4">28. Affiliate Marketing Cookies</h3>
+                        <p class="mb-2">
+                            Zingtava may participate in affiliate marketing programs. When you click on an affiliate link on our site that leads to a third-party product or service, an affiliate cookie may be set on your device. This cookie tracks that you originated from our site and helps us earn a commission if you make a purchase on the linked site. These cookies are solely for tracking referral performance and do not collect personal information about you. They are essential for the operation of our affiliate partnerships, which help support the free content we provide.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Purpose:</strong> To track referrals for affiliate marketing programs.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Examples:</strong> Cookies from Amazon Associates, other e-commerce affiliate networks.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Impact of Disabling:</strong> Will not affect your browsing, but it may impact our ability to earn revenue from referrals.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Data Collected:</strong> Anonymous referral ID, timestamp of click.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Duration:</strong> Persistent, typically for a few days to a month.
+                        </p>
+                        <p class="mb-2">
+                            <strong>First-party/Third-party:</strong> Primarily third-party.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Legal Basis:</strong> Consent, as they are for marketing and revenue generation.
+                        </p>
+                        <p class="mb-2">
+                            <strong>User Control:</strong> Can be accepted or declined via our cookie consent banner.
+                        </p>
+                        <p>
+                            <strong>Transparency:</strong> We explain their role in supporting our website through partnerships.
+                        </p>
+                    </div>
+
+                    <!-- Point 29 -->
+                    <div>
+                        <h3 class="text-3xl font-bold text-primary mb-4">29. Email Marketing Integration Cookies</h3>
+                        <p class="mb-2">
+                            If you subscribe to our newsletter or interact with our email marketing campaigns, we may use cookies in conjunction with our email service provider. These cookies help us track whether you opened an email, clicked on links within it, or visited our website after receiving an email. This allows us to understand the effectiveness of our email communications and tailor future campaigns to your interests. This data is typically aggregated and used to improve our communication strategy, ensuring you receive relevant updates and content from Zingtava.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Purpose:</strong> To track engagement with email marketing campaigns.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Examples:</strong> Cookies from Mailchimp, ConvertKit, or similar email marketing platforms.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Impact of Disabling:</strong> Will not affect your browsing, but it may limit our ability to optimize email content.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Data Collected:</strong> Anonymous data on email opens and clicks.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Duration:</strong> Persistent, typically for a few weeks.
+                        </p>
+                        <p class="mb-2">
+                            <strong>First-party/Third-party:</strong> Primarily third-party.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Legal Basis:</strong> Consent, often tied to your email subscription consent.
+                        </p>
+                        <p class="mb-2">
+                            <strong>User Control:</strong> Can be accepted or declined via our cookie consent banner.
+                        </p>
+                        <p>
+                            <strong>Transparency:</strong> We explain their role in improving our email communications.
+                        </p>
+                    </div>
+
+                    <!-- Point 30 -->
+                    <div>
+                        <h3 class="text-3xl font-bold text-primary mb-4">30. User Feedback and Survey Cookies</h3>
+                        <p class="mb-2">
+                            From time to time, we may conduct surveys or gather user feedback to improve our website and content. Cookies may be used in conjunction with these tools to ensure that you don't see the same survey repeatedly or to remember your responses if you pause and return later. They help us manage the feedback process efficiently and ensure that we collect valuable insights without inconveniencing our users. These cookies are typically non-intrusive and are solely for the purpose of improving our services based on your input.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Purpose:</strong> To manage user feedback forms and surveys.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Examples:</strong> Cookies from survey platforms like SurveyMonkey or Typeform.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Impact of Disabling:</strong> You may be prompted with surveys more frequently.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Data Collected:</strong> Anonymous survey IDs, completion status, and potentially survey responses (if stored in cookie).
+                        </p>
+                        <p class="mb-2">
+                            <strong>Duration:</strong> Short-term persistent.
+                        </p>
+                        <p class="mb-2">
+                            <strong>First-party/Third-party:</strong> Can be both first-party or third-party.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Legal Basis:</strong> Legitimate interest, as they facilitate service improvement.
+                        </p>
+                        <p class="mb-2">
+                            <strong>User Control:</strong> Can be accepted or declined via our cookie consent banner.
+                        </p>
+                        <p>
+                            <strong>Transparency:</strong> We explain their use in gathering valuable user input.
+                        </p>
+                    </div>
+
+                    <!-- Point 31 -->
+                    <div>
+                        <h3 class="text-3xl font-bold text-primary mb-4">31. Fraud Prevention Cookies</h3>
+                        <p class="mb-2">
+                            To protect both Zingtava and our users from fraudulent activities, we may employ cookies specifically designed for fraud detection and prevention. These cookies help us identify unusual patterns of behavior, suspicious transactions, or potential security threats. They work by analyzing various data points related to your device and browsing patterns to flag anything that deviates from normal, legitimate use. This is a critical security measure to safeguard your account and our platform from malicious actors.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Purpose:</strong> To detect and prevent fraudulent activities on the website.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Examples:</strong> Cookies used by fraud detection services.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Impact of Disabling:</strong> Could increase your vulnerability to fraudulent activities or lead to account suspension if suspicious activity is detected without cookie data.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Data Collected:</strong> Device identifiers, IP addresses, and behavioral patterns for risk assessment.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Duration:</strong> Persistent, varying by service.
+                        </p>
+                        <p class="mb-2">
+                            <strong>First-party/Third-party:</strong> Can be both first-party or third-party.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Legal Basis:</strong> Legitimate interest, as they are essential for security and compliance.
+                        </p>
+                        <p class="mb-2">
+                            <strong>User Control:</strong> Not directly controllable by users; essential for security.
+                        </p>
+                        <p>
+                            <strong>Transparency:</strong> We emphasize their role in protecting users and the platform.
+                        </p>
+                    </div>
+
+                    <!-- Point 32 -->
+                    <div>
+                        <h3 class="text-3xl font-bold text-primary mb-4">32. Accessibility Cookies</h3>
+                        <p class="mb-2">
+                            These cookies are designed to enhance the accessibility of our website for users with disabilities. They might remember settings like high contrast mode, text-to-speech preferences, or keyboard navigation preferences. By storing these choices, the website can automatically adjust its interface to meet your specific accessibility needs on subsequent visits, providing a more inclusive and user-friendly experience for everyone. These cookies are crucial for ensuring that Zingtava is usable by the widest possible audience.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Purpose:</strong> To store and apply accessibility preferences for users.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Examples:</strong> Cookies remembering high-contrast settings, font size adjustments.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Impact of Disabling:</strong> Accessibility settings may reset on each visit, requiring manual re-configuration.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Data Collected:</strong> Anonymous data about accessibility preferences.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Duration:</strong> Persistent, typically for several months.
+                        </p>
+                        <p class="mb-2">
+                            <strong>First-party/Third-party:</strong> Primarily first-party.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Legal Basis:</strong> Legitimate interest, as they improve website usability for all.
+                        </p>
+                        <p class="mb-2">
+                            <strong>User Control:</strong> Can be accepted or declined via our cookie consent banner.
+                        </p>
+                        <p>
+                            <strong>Transparency:</strong> We highlight their importance for inclusive design.
+                        </p>
+                    </div>
+
+                    <!-- Point 33 -->
+                    <div>
+                        <h3 class="text-3xl font-bold text-primary mb-4">33. Content Delivery Network (CDN) Cookies</h3>
+                        <p class="mb-2">
+                            To ensure fast loading times and efficient delivery of our website content globally, Zingtava may utilize Content Delivery Networks (CDNs). These networks use cookies to optimize content delivery by directing your browser to the closest server location. This reduces latency and improves the overall speed and responsiveness of our site. These cookies are purely technical in nature and do not store any personal information about you; they simply facilitate the efficient distribution of website assets like images, scripts, and stylesheets.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Purpose:</strong> To optimize content delivery and improve website loading speed.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Examples:</strong> Cookies used by Cloudflare, Akamai, or other CDN providers.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Impact of Disabling:</strong> Could result in slower website loading times and reduced performance.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Data Collected:</strong> Anonymous data related to server location and content caching.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Duration:</strong> Session-based or short-term persistent.
+                        </p>
+                        <p class="mb-2">
+                            <strong>First-party/Third-party:</strong> Can be both first-party or third-party.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Legal Basis:</strong> Legitimate interest, as they are essential for website performance.
+                        </p>
+                        <p class="mb-2">
+                            <strong>User Control:</strong> Not directly controllable by users; essential for performance.
+                        </p>
+                        <p>
+                            <strong>Transparency:</strong> We explain their technical role in website speed.
+                        </p>
+                    </div>
+
+                    <!-- Point 34 -->
+                    <div>
+                        <h3 class="text-3xl font-bold text-primary mb-4">34. Anti-Spam and Bot Detection Cookies</h3>
+                        <p class="mb-2">
+                            To protect our website from spam, automated bots, and malicious activity, we may use cookies in conjunction with anti-spam and bot detection services. These cookies help distinguish between human users and automated programs, preventing spam submissions in comments, forms, or registrations. They analyze behavioral patterns to identify suspicious activity without collecting personally identifiable information. This ensures a clean and secure environment for our users and protects the integrity of our content and services.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Purpose:</strong> To protect the website from spam, bots, and malicious automated activity.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Examples:</strong> Cookies from reCAPTCHA or similar bot detection services.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Impact of Disabling:</strong> Could lead to increased spam on the site or difficulty submitting forms.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Data Collected:</strong> Anonymous behavioral data for bot detection.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Duration:</strong> Short-term persistent.
+                        </p>
+                        <p class="mb-2">
+                            <strong>First-party/Third-party:</strong> Primarily third-party.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Legal Basis:</strong> Legitimate interest, as they are essential for website security and integrity.
+                        </p>
+                        <p class="mb-2">
+                            <strong>User Control:</strong> Not directly controllable by users; essential for security.
+                        </p>
+                        <p>
+                            <strong>Transparency:</strong> We clarify their role in maintaining a secure online environment.
+                        </p>
+                    </div>
+
+                    <!-- Point 35 -->
+                    <div>
+                        <h3 class="text-3xl font-bold text-primary mb-4">35. Geo-Targeting Cookies</h3>
+                        <p class="mb-2">
+                            Geo-targeting cookies allow us to provide content or offers that are specifically relevant to your geographical location. Unlike simple region preference cookies that remember a user's chosen setting, geo-targeting cookies may infer your location based on your IP address to automatically deliver localized content, such as recipes popular in your country or regional cooking events. This enhances the relevance of the information you receive from Zingtava, making your experience more tailored to your local culinary landscape.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Purpose:</strong> To deliver geographically relevant content and offers.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Examples:</strong> Cookies that store inferred country or city based on IP.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Impact of Disabling:</strong> You may receive generic content not tailored to your location.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Data Collected:</strong> Inferred geographical location (e.g., country, city).
+                        </p>
+                        <p class="mb-2">
+                            <strong>Duration:</strong> Persistent, typically for a few weeks or months.
+                        </p>
+                        <p class="mb-2">
+                            <strong>First-party/Third-party:</strong> Can be both first-party or third-party.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Legal Basis:</strong> Consent, as they enhance user experience and provide localized content.
+                        </p>
+                        <p class="mb-2">
+                            <strong>User Control:</strong> Can be accepted or declined via our cookie consent banner.
+                        </p>
+                        <p>
+                            <strong>Transparency:</strong> We explain their role in providing localized culinary content.
+                        </p>
+                    </div>
+
+                    <!-- Point 36 -->
+                    <div>
+                        <h3 class="text-3xl font-bold text-primary mb-4">36. Device Recognition Cookies</h3>
+                        <p class="mb-2">
+                            These cookies help us recognize your device (e.g., desktop, mobile, tablet) and browser type. This information allows us to optimize the website's display and functionality for your specific device, ensuring a consistent and responsive user experience across different platforms. For example, it might help us serve mobile-optimized layouts or adjust image sizes for faster loading on smaller screens. This data is generally anonymous and is used purely for technical optimization.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Purpose:</strong> To optimize website display and functionality for specific devices and browsers.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Examples:</strong> Cookies storing device type, screen resolution, browser version.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Impact of Disabling:</strong> The website may not display optimally on your device, leading to a less user-friendly experience.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Data Collected:</strong> Anonymous device and browser characteristics.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Duration:</strong> Persistent, typically for several months.
+                        </p>
+                        <p class="mb-2">
+                            <strong>First-party/Third-party:</strong> Primarily first-party.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Legal Basis:</strong> Legitimate interest, as they are essential for responsive design.
+                        </p>
+                        <p class="mb-2">
+                            <strong>User Control:</strong> Not directly controllable by users; essential for responsive design.
+                        </p>
+                        <p>
+                            <strong>Transparency:</strong> We explain their role in ensuring optimal viewing across devices.
+                        </p>
+                    </div>
+
+                    <!-- Point 37 -->
+                    <div>
+                        <h3 class="text-3xl font-bold text-primary mb-4">37. Debugging and Error Reporting Cookies</h3>
+                        <p class="mb-2">
+                            To maintain the stability and reliability of our website, we use cookies that assist in debugging and error reporting. When an error occurs on the site, these cookies can capture anonymous technical information about the error and your session, helping our development team identify and fix issues quickly. This data is purely diagnostic and does not contain personal identifying information. It is crucial for ensuring the smooth operation of Zingtava and promptly resolving any technical glitches that may arise.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Purpose:</strong> To assist in debugging website errors and improving stability.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Examples:</strong> Cookies storing error codes, session IDs related to an error.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Impact of Disabling:</strong> Could hinder our ability to detect and resolve website errors, potentially leading to a less stable experience.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Data Collected:</strong> Anonymous technical data about errors and session state.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Duration:</strong> Session-based or short-term persistent.
+                        </p>
+                        <p class="mb-2">
+                            <strong>First-party/Third-party:</strong> Primarily first-party.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Legal Basis:</strong> Legitimate interest, as they are essential for website maintenance.
+                        </p>
+                        <p class="mb-2">
+                            <strong>User Control:</strong> Not directly controllable by users; essential for website health.
+                        </p>
+                        <p>
+                            <strong>Transparency:</strong> We explain their technical role in maintaining website quality.
+                        </p>
+                    </div>
+
+                    <!-- Point 38 -->
+                    <div>
+                        <h3 class="text-3xl font-bold text-primary mb-4">38. Content Personalization Engine Cookies</h3>
+                        <p class="mb-2">
+                            Beyond simple personalization, some advanced systems use cookies to power sophisticated content personalization engines. These cookies collect detailed information about your interactions with various types of content (e.g., specific ingredients, cooking techniques, dietary preferences) to build a dynamic profile of your interests. This profile is then used to recommend highly tailored recipes, articles, and features that you are most likely to find engaging. This aims to create a deeply personalized and highly relevant content discovery experience on Zingtava.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Purpose:</strong> To power advanced content personalization and recommendation engines.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Examples:</strong> Cookies from AI-driven recommendation systems.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Impact of Disabling:</strong> Significantly reduces the relevance and personalization of content recommendations.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Data Collected:</strong> Detailed content interaction history, inferred interests, and user segment data.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Duration:</strong> Persistent, often for several months or years.
+                        </p>
+                        <p class="mb-2">
+                            <strong>First-party/Third-party:</strong> Can be both first-party or third-party.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Legal Basis:</strong> Consent, as they are for enhanced personalization.
+                        </p>
+                        <p class="mb-2">
+                            <strong>User Control:</strong> Can be accepted or declined via our cookie consent banner.
+                        </p>
+                        <p>
+                            <strong>Transparency:</strong> We explain their role in delivering highly relevant content.
+                        </p>
+                    </div>
+
+                    <!-- Point 39 -->
+                    <div>
+                        <h3 class="text-3xl font-bold text-primary mb-4">39. User Journey Mapping Cookies</h3>
+                        <p class="mb-2">
+                            These cookies are used for advanced analytics to map out the complete user journey on our website. They track the sequence of pages visited, the features used, and the overall path a user takes from entry to exit. This aggregated and anonymized data provides us with a holistic view of user behavior, helping us identify bottlenecks, optimize navigation flows, and understand how users achieve their goals on Zingtava. This is crucial for continuous improvement of the website's architecture and user experience design.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Purpose:</strong> To analyze and optimize user journeys and website navigation.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Examples:</strong> Cookies used by journey mapping tools like FullStory or Crazy Egg.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Impact of Disabling:</strong> Limits our ability to understand and optimize the overall user flow on the website.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Data Collected:</strong> Anonymous data on page sequence, clicks, and time spent on sections.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Duration:</strong> Persistent, typically for a few weeks.
+                        </p>
+                        <p class="mb-2">
+                            <strong>First-party/Third-party:</strong> Can be both first-party or third-party.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Legal Basis:</strong> Consent, as they are for analytical and optimization purposes.
+                        </p>
+                        <p class="mb-2">
+                            <strong>User Control:</strong> Can be accepted or declined via our cookie consent banner.
+                        </p>
+                        <p>
+                            <strong>Transparency:</strong> We explain their role in optimizing the user's path through the site.
+                        </p>
+                    </div>
+
+                    <!-- Point 40 -->
+                    <div>
+                        <h3 class="text-3xl font-bold text-primary mb-4">40. Server-Side Tracking Cookies (via Server-Side Tagging)</h3>
+                        <p class="mb-2">
+                            In some cases, Zingtava may implement server-side tracking, where data is sent from our server to third-party analytics or advertising platforms, rather than directly from your browser. While this method can reduce reliance on client-side cookies, some server-side setups may still use a form of "server-side cookie" or unique identifier passed via the server. These identifiers help maintain session continuity and user recognition for analytics and attribution purposes, offering a more robust and privacy-enhanced way of tracking compared to traditional third-party cookies. This approach aims to provide necessary data for website operations while minimizing direct browser-based tracking by third parties.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Purpose:</strong> To facilitate robust and privacy-enhanced tracking through server-side processing.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Examples:</strong> Unique identifiers managed by server-side tag managers.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Impact of Disabling:</strong> May affect the accuracy of analytics and attribution data, potentially impacting website optimization.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Data Collected:</strong> Pseudonymized user identifiers, session data, and event data.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Duration:</strong> Varies depending on the specific implementation.
+                        </p>
+                        <p class="mb-2">
+                            <strong>First-party/Third-party:</strong> Can appear as first-party from the user's perspective, but data is forwarded to third parties.
+                        </p>
+                        <p class="mb-2">
+                            <strong>Legal Basis:</strong> Consent, depending on the data collected and its purpose.
+                        </p>
+                        <p class="mb-2">
+                            <strong>User Control:</strong> Can be accepted or declined via our cookie consent banner.
+                        </p>
+                        <p>
+                            <strong>Transparency:</strong> We explain this advanced tracking method and its privacy implications.
+                        </p>
+                    </div>
+                </div>
+
+                <h2 class="text-4xl font-bold text-accent-black mt-16 mb-8 text-center">Your Choices Regarding Cookies</h2>
+                <p class="text-lg leading-relaxed text-gray-700 mb-8">
+                    You have the right to decide whether to accept or reject cookies. You can exercise your cookie preferences by clicking on the appropriate buttons in the cookie consent banner that appears at the bottom of our website. You can also manage cookies through your web browser settings. Most browsers allow you to refuse all cookies or to accept only certain types of cookies. You can also delete cookies from your browser at any time. However, if you choose to disable cookies, some features of our website may not function properly or may become unavailable. Please note that these settings are specific to the browser and device you are using.
+                </p>
+
+                <h3 class="text-3xl font-bold text-primary mb-4">Managing Cookies in Your Browser</h3>
+                <ul class="list-disc list-inside text-lg leading-relaxed text-gray-700 mb-8 space-y-2">
+                    <li><strong>Google Chrome:</strong> Settings > Privacy and security > Site Settings > Cookies and site data.</li>
+                    <li><strong>Mozilla Firefox:</strong> Options > Privacy & Security > Cookies and Site Data.</li>
+                    <li><strong>Microsoft Edge:</strong> Settings > Privacy, search, and services > Clear browsing data > Choose what to clear.</li>
+                    <li><strong>Safari (macOS):</strong> Safari > Preferences > Privacy > Manage Website Data.</li>
+                    <li><strong>Safari (iOS):</strong> Settings > Safari > Privacy & Security.</li>
+                    <li><strong>Opera:</strong> Settings > Advanced > Privacy & security > Site Settings > Cookies and site data.</li>
+                </ul>
+
+                <h2 class="text-4xl font-bold text-accent-black mt-16 mb-8 text-center">Changes to Our Cookies Policy</h2>
+                <p class="text-lg leading-relaxed text-gray-700 mb-8">
+                    We may update our Cookies Policy from time to time to reflect changes in our practices or for other operational, legal, or regulatory reasons. Any changes will be posted on this page, and we encourage you to review this policy periodically to stay informed about how we use cookies. Your continued use of the website after any changes to this policy will constitute your acceptance of such changes. We will notify you of any significant changes by placing a prominent notice on our website or by other appropriate means.
+                </p>
+
+                <h2 class="text-4xl font-bold text-accent-black mt-16 mb-8 text-center">Contact Us</h2>
+                <p class="text-lg leading-relaxed text-gray-700 mb-8">
+                    If you have any questions about our use of cookies or this Cookies Policy, please contact us:
+                </p>
+                <ul class="list-disc list-inside text-lg leading-relaxed text-gray-700 mb-8 space-y-2">
+                    <li>By email: <a href="mailto:info@zingtava.com" class="text-primary hover:underline">info@zingtava.com</a></li>
+                    <li>By visiting this page on our website: <a href="contact.html" class="text-primary hover:underline">Zingtava Contact Page</a></li>
+                    <li>By phone: +1 (555) 123-4567</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-accent-black text-white py-10">
+        <div class="container mx-auto px-4 text-center">
+            <div class="mb-6">
+                <h3 class="text-2xl font-bold text-accent-gold mb-2">Zingtava Headquarters</h3>
+                <p class="text-gray-400">
+                    123 Flavor Street, Spice District,<br>
+                    Umami City, Global Region 78901<br>
+                    Phone: +1 (555) 123-4567<br>
+                    Email: info@zingtava.com
+                </p>
+            </div>
+            <nav class="mb-6">
+                <ul class="flex flex-wrap justify-center space-x-6 text-lg font-semibold">
+                    <li><a href="index.html" class="text-gray-300 hover:text-primary">Home</a></li>
+                    <li><a href="blog.html" class="text-gray-300 hover:text-primary">Blog</a></li>
+                    <li><a href="privacy.html" class="text-gray-300 hover:text-primary">Privacy</a></li>
+                    <li><a href="terms.html" class="text-gray-300 hover:text-primary">Terms</a></li>
+                    <li><a href="cookies.html" class="text-gray-300 hover:text-primary">Cookies</a></li>
+                    <li><a href="contact.html" class="text-gray-300 hover:text-primary">Contact</a></li>
+                </ul>
+            </nav>
+            <p class="text-gray-500 text-sm">&copy; 2025 Zingtava. All rights reserved. Sizzle. Slurp. Snack. is a registered trademark.</p>
+        </div>
+    </footer>
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookieConsentBanner">
+        <p>
+            We use cookies to enhance your browsing experience, analyze site traffic, and personalize content. By clicking "Accept All Cookies," you consent to our use of cookies. For more information, please read our <a href="cookies.html" class="font-bold">Cookies Policy</a>.
+        </p>
+        <div class="cookie-buttons">
+            <button id="acceptCookies" class="accept-btn">Accept All Cookies</button>
+            <button id="declineCookies" class="decline-btn">Decline All</button>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const cookieBanner = document.getElementById('cookieConsentBanner');
+            const acceptButton = document.getElementById('acceptCookies');
+            const declineButton = document.getElementById('declineCookies');
+            const cookieConsentKey = 'zingtava_cookie_consent';
+
+            // Check if user has already made a choice
+            const userConsent = localStorage.getItem(cookieConsentKey);
+
+            if (!userConsent) {
+                // If no choice, show the banner
+                cookieBanner.style.display = 'flex';
+            }
+
+            // Event listener for "Accept All Cookies" button
+            acceptButton.addEventListener('click', function() {
+                localStorage.setItem(cookieConsentKey, 'accepted');
+                cookieBanner.style.display = 'none';
+                // In a real application, you would now enable analytics/tracking cookies
+                console.log('Cookies accepted!');
+            });
+
+            // Event listener for "Decline All" button
+            declineButton.addEventListener('click', function() {
+                localStorage.setItem(cookieConsentKey, 'declined');
+                cookieBanner.style.display = 'none';
+                // In a real application, you would now disable all non-essential cookies
+                console.log('Cookies declined!');
+            });
+        });
+    </script>
+</body>
+</html>
